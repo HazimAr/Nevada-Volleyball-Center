@@ -15,6 +15,15 @@ html {
   font-size: large;
 }
 
+:root {
+  --primary: #202020;
+  --secondary: #3F3F3F;
+  --accent: #00b3ff;
+  --font: #ffffff;
+  --font2: #000000;
+  --color-dark: #1f1f1f;
+}
+
 ::placeholder {
   color: var(--color-accent);
   font-family: Arial, Helvetica, sans-serif;
@@ -51,4 +60,83 @@ body::-webkit-scrollbar-thumb {
 a {
   text-decoration: none;
   color: inherit
+}
+
+/*       Footer        */
+
+footer {
+  border-top: solid var(--primary) 1px;
+  background-color: var(--dark);
+  color: var(--color-accent);
+  padding-bottom: 20px;
+}
+
+.footer-text {
+  line-height: 50px;
+}
+
+.footer-copyright-text {
+  font-size: 20px;
+}
+
+.footer-socials {
+  width: 40px;
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+  padding: 2px;
+}
+
+.footer-socials:hover {
+  background-color: var(--primary);
+}
+
+.footer-socials-div {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 600px;
+  margin: auto;
+}
+
+.FourZeroFour-div {
+  background-color: rgb(58, 211, 170);
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  color: var(--font-color-o);
+  padding-bottom: 35vh;
+  overflow: hidden;
+}
+
+.FourZeroFour-text {
+  font-size: 20px;
+}
+
+.FourZeroFour-Header {
+  z-index: 11;
+}
+
+#fof-button {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.FourZeroFour-img {
+  margin-bottom: -200px;
+  position: relative;
+  left: -10%;
+  z-index: 10;
+}
+
+@media screen and (max-width:500px) {
+  .FourZeroFour-img {
+    width: 100%;
+  }
+  .FourZeroFour-img2 {
+    width: 45%;
+  }
+  .FourZeroFour-img {
+    margin-bottom: -100px;
+  }
 }
