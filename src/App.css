@@ -53,7 +53,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--secondary);
+  background-color: var(--accent);
   border-radius: 60px;
 }
 
@@ -61,11 +61,19 @@ a {
   text-decoration: none;
   color: inherit
 }
+Home
+/*        Home         */
+.home{
+  padding: 1000px 0;
+}
 
+.home-text{
+  margin:1000px 0;
+}
 /*       Footer        */
 
 footer {
-  border-top: solid var(--primary) 1px;
+  border-top: solid var(--accent) 1px;
   background-color: var(--secondary);
   color: var(--accent);
   padding-bottom: 20px;

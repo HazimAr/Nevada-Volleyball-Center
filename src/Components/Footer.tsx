@@ -8,7 +8,7 @@ export default function Footer() {
         <footer id='footer'>
             <p className='section-title'>Contact Us</p>
             <p className='footer-text'>
-                SparksVolleyBallClub@gmail.com<br />
+                NevadaVolleyBallCenter@gmail.com<br />
                 (702) 502-9462<br />
                 3778 W. Cheyenne Ave STE 120 <br /> 
                 N. Las Vegas, NV 89032<br />
@@ -18,7 +18,7 @@ export default function Footer() {
                 <a href='https://www.instagram.com/sparks_vbc_lv/' target="_blank" rel="noreferrer noopener" className='footer-img-link'><img src={insta} alt='' className='footer-socials' /></a>
                 <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A' target="_blank" rel="noreferrer noopener" className='footer-img-link'><img src={youtube} alt='' className='footer-socials' /></a>
             </div>
-            <p className='footer-copyright-text'>© 2020 <span className='footer-copyright-name'>Sparks Volleyball Club</span></p>
+            <p className='footer-copyright-text'>© 2020 <span className='footer-copyright-name'>Nevada VolleyBall Center</span></p>
         </footer>
     )
 }
