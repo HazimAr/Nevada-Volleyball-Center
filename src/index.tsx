@@ -19,12 +19,12 @@ function App() {
       <Header />
       <Switch>
 
-        <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/faq' component={Faq} />
-        <Route exact path='/covid-19' component={Covid19} />
-        <Route exact path='/terms-conditions' component={TermsConditions} />
-        <Route exact path='/contact' component={Contact} />
+        <Route path='/about' component={About} />
+        <Route path='/faq' component={Faq} />
+        <Route path='/covid-19' component={Covid19} />
+        <Route path='/terms-conditions' component={TermsConditions} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/' component={Home} />
 
       </Switch>
       <Footer />

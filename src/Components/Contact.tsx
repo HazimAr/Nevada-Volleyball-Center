@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 const config = {
-    KEY: 'user_K8yMoHdWyipPSteLQZyhY',
-    SERVICE: 'service_kynwjfc',
-    TEMPLATE: 'template_azeut2w',
+    KEY: '',
+    SERVICE: '',
+    TEMPLATE: '',
 }
 init(config.KEY);
 export default function Contact() {
@@ -26,7 +26,7 @@ export default function Contact() {
         alert('Please fill in all required fields')
     }
 
-    const handleSubmit = function (e: string) {
+    const handleSubmit = function (e: any) {
         e.preventDefault();
         if (name !== '' && phone !== '' && email !== '' && subject !== '') {
             emailjs.send(config.SERVICE, config.TEMPLATE, {
@@ -43,22 +43,21 @@ export default function Contact() {
     }
     return (
         <div className='contact-outside-div' id='contact'>
-                <form className='contact-form' onSubmit={handleSubmit}>
-                    <h2 className='section-title'>Have more questions?</h2>
-                    <div className='contact-form-div'>
-                        <input value={name} onChange={function (e) { setName(e.target.value) }} type='text' placeholder='Name *' className='contact-input' />
-                        <input value={phone} onChange={function (e) { setPhone(e.target.value) }} type='text' placeholder='Phone *' className='contact-input' />
-                    </div>
-                    <div className='contact-form-div'>
-                        <input value={email} onChange={function (e) { setEmail(e.target.value) }} type='text' placeholder='Email *' className='contact-input' />
-                        <input value={subject} onChange={function (e) { setSubject(e.target.value) }} type='text' placeholder='Subject *' className='contact-input' />
-                    </div>
-                    <div className='contact-form-div'>
-                        <textarea value={message} onChange={function (e) { setMessage(e.target.value) }} className='contact-input' placeholder='Message *' />
-                    </div>
-                    <input type='submit' id='button' className='intro-button' />
-                </form>
-
+            <form className='contact-form' onSubmit={handleSubmit}>
+                <h2 className='section-title'>Have more questions?</h2>
+                <div className='contact-form-div'>
+                    <input value={name} onChange={function (e) { setName(e.target.value) }} type='text' placeholder='Name *' className='contact-input' />
+                    <input value={phone} onChange={function (e) { setPhone(e.target.value) }} type='text' placeholder='Phone *' className='contact-input' />
+                </div>
+                <div className='contact-form-div'>
+                    <input value={email} onChange={function (e) { setEmail(e.target.value) }} type='text' placeholder='Email *' className='contact-input' />
+                    <input value={subject} onChange={function (e) { setSubject(e.target.value) }} type='text' placeholder='Subject *' className='contact-input' />
+                </div>
+                <div className='contact-form-div'>
+                    <textarea value={message} onChange={function (e) { setMessage(e.target.value) }} className='contact-input' placeholder='Message *' />
+                </div>
+                <input type='submit' id='button' className='intro-button' />
+            </form>
         </div>
     )
 }
