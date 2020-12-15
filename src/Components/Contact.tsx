@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 const config = {
-    KEY: '',
-    SERVICE: '',
-    TEMPLATE: '',
+    KEY: 'user_Hz24Srup9yn30cxGqSBdO',
+    SERVICE: 'service_ud7a7qs',
+    TEMPLATE: 'template_tt6c59m',
 }
 init(config.KEY);
 export default function Contact() {

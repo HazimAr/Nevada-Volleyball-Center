@@ -8,7 +8,7 @@ export default function Header() {
                 <a href='/'  className='header-link'>Home</a>
                 <a href='/about' className='header-link'>About Us</a>
                 <a href='/covid-19' className='header-link' id='header-register'>Covid-19</a>
-                <a href='/faq'  className='header-link'>Contact</a>
+                <a href='/contact'  className='header-link'>Contact</a>
             </div>
         </div>
     )

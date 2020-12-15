@@ -69,6 +69,24 @@ a {
   font-weight: 400;
 }
 
+#button {
+  font-weight: bold;
+  background-color: var(--accent);
+  color: var(--font2);
+  font-size: 27px;
+  margin: auto;
+  width: fit-content;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all ease-in-out 0.3s;
+  border: none;
+}
+
+#button:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
 /*        Header       */
 
 header {
@@ -138,10 +156,60 @@ header {
   margin: 500px 0;
 }
 
+/*     Contact    */
+
+.contact-outside-div {
+  padding: 50px 0;
+  background-color: var(--primary);
+  color: var(--font)
+}
+
+.contact-form {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-form-div {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-input {
+  width: 49%;
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--font);
+  padding: 17px 25px;
+  box-sizing: border-box;
+  outline-width: 0;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  width: 100%!important;
+  resize: vertical;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+@media screen and (max-width:1100px) {
+  .contact-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-form-div {
+    margin: 0;
+  }
+}
+
 /*       Footer        */
 
 footer {
-  border-top: solid var(--accent) 1px;
+  border-top: solid var(--primary) 1px;
   background-color: var(--secondary);
   color: var(--accent);
   padding-bottom: 20px;
