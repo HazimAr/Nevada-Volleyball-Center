@@ -10,6 +10,7 @@ import Faq from './Components/Faq'
 import TermsConditions from './Components/TermsConditions'
 import About from './Components/About'
 import Footer from './Components/Footer'
+import Contact from './Components/Contact'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route exact path='/faq' component={Faq} />
         <Route exact path='/covid-19' component={Covid19} />
         <Route exact path='/terms-conditions' component={TermsConditions} />
+        <Route exact path='/contact' component={Contact} />
 
       </Switch>
       <Footer />
