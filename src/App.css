@@ -26,11 +26,13 @@ html {
 
 ::placeholder {
   color: var(--accent);
+  background: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 :-ms-input-placeholder {
   color: var(--accent);
+  background: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
 }
 
