@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 const config = {
@@ -42,9 +42,10 @@ export default function Contact() {
         }
     }
     return (
-        <div className='contact-outside-div' id='contact'>
+        <div className='contact-outside-div'>
             <form className='contact-form' onSubmit={handleSubmit}>
-                <h2 className='section-title'>Have more questions?</h2>
+                <h2 className='section-title'>Contact Us</h2>
+                <p>Blah BlahBlahBlahBlahBlahBlah BlahBlah BlahBlahBlahBlah</p>
                 <div className='contact-form-div'>
                     <input value={name} onChange={function (e) { setName(e.target.value) }} type='text' placeholder='Name *' className='contact-input' />
                     <input value={phone} onChange={function (e) { setPhone(e.target.value) }} type='text' placeholder='Phone *' className='contact-input' />
@@ -56,7 +57,7 @@ export default function Contact() {
                 <div className='contact-form-div'>
                     <textarea value={message} onChange={function (e) { setMessage(e.target.value) }} className='contact-input' placeholder='Message *' />
                 </div>
-                <input type='submit' id='button' className='intro-button' />
+                <input id='submit' type='submit' />
             </form>
         </div>
     )

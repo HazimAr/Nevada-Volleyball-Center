@@ -25,14 +25,12 @@ html {
 }
 
 ::placeholder {
-  color: var(--accent);
-  background: var(--primary);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 :-ms-input-placeholder {
-  color: var(--accent);
-  background: var(--primary);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -112,7 +110,7 @@ header {
 .header-links-div {
   display: flex;
   width: 60%;
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
 }
 
@@ -124,13 +122,6 @@ header {
 
 .header-link:hover {
   font-size: 24px;
-}
-
-#header-register {
-  border-radius: 20px;
-  padding: 8px;
-  background-color: #9e2d2d;
-  color: white;
 }
 
 .header-menu-img {
@@ -162,8 +153,8 @@ header {
 
 .contact-outside-div {
   padding: 50px 0;
-  background-color: var(--primary);
-  color: var(--font)
+  min-height: 80vh;
+  display: flex;
 }
 
 .contact-form {
@@ -181,13 +172,13 @@ header {
 
 .contact-input {
   width: 49%;
+  font-size: 18px;
   background-color: transparent;
-  border: 1px solid var(--accent);
-  color: var(--font);
+  border: 2px solid rgb(126, 126, 126);
   padding: 17px 25px;
   box-sizing: border-box;
   outline-width: 0;
-  border-radius: 6px;
+  border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -198,7 +189,23 @@ textarea {
   max-height: 400px;
 }
 
-@media screen and (max-width:1100px) {
+#submit {
+  background-color: var(--primary);
+  font-size: 20px;
+  padding: 10px 60px;
+  color: white;
+  border: none;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+#submit:hover {
+  background-color: #b64f4f;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
   .contact-input {
     width: 100%;
     margin-bottom: 20px;
@@ -241,4 +248,122 @@ footer {
   justify-content: space-evenly;
   max-width: 600px;
   margin: auto;
+}
+
+.main-div {
+  height: 500px;
+  background-color: var(--primary);
+}
+
+.mid {
+  padding: 100px 0;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 55px;
+  padding-bottom: 32px;
+}
+
+#first {
+  max-width: 500px;
+  padding: 100px 0;
+}
+
+.sections-div, .test-div {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section {
+  width: 30%;
+  max-width: 500px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.button {
+  background-color: var(--primary);
+  border-radius: 20px;
+  color: white;
+  margin: 10px 0;
+  padding: 10px 30px;
+  width: fit-content;
+  transition: all ease-in-out 0.3s;
+}
+
+.button:hover {
+  background-color: #b64f4f;
+}
+
+/* Quotes */
+
+h4 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.test-div {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+
+.quote-div {
+  margin: 0 30px;
+}
+
+.quote {
+  background-color: rgba(211, 211, 211, 0.548);
+  border-radius: 15px;
+  padding: 40px 25px;
+  width: 340px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote p {
+  width: 80%;
+}
+
+.quote img {
+  padding-bottom: 50px;
+}
+
+.quote-info {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+
+.quote-info p {
+  margin: 5px 0;
+}
+
+.about {
+  padding: 100px 0;
+  min-height: 70vh;
+  text-align: left;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.about p {
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  font-size: 21px;
+  color: rgba(41, 41, 41, 1)
 }
