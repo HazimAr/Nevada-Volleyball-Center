@@ -12,7 +12,6 @@ function Section(props: { img: any, title: string, text: string }) {
         </div>
     )
 }
-
 function Quote(props: { quote: string, name: string, org: string, img: any }) {
     return (
         <div className='quote-div'>
@@ -31,7 +30,6 @@ function Quote(props: { quote: string, name: string, org: string, img: any }) {
 
     )
 }
-
 export default function Home() {
     return (
         <div>
@@ -39,14 +37,14 @@ export default function Home() {
                 <div className='intro-div' id='home'>
                     <div className='intro-inside-div'>
                         <div className='intro-text-div'>
-                        <h1>We are Sparks Volleyball Club</h1>
-                        <p className='intro-button'>Learn More</p>
+                            <h1>We are Sparks Volleyball Club</h1>
+                            <p className='intro-button'>Learn More</p>
+                        </div>
+                        <div className='intro-img-div'>
+                            <img src={logo} alt='' className='intro-img' />
+                        </div>
                     </div>
-                <div className='intro-img-div'>
-                    <img src={logo} alt='' className='intro-img' />
                 </div>
-            </div>
-        </div>
                 <img src={wave} alt='' />
             </div>
             <div className='mid'>
@@ -81,7 +79,12 @@ export default function Home() {
                         org="None, he lonely"
                         img={img}
                     />
-
+                    <Quote
+                        quote="Proudly cooperating with hundreds of the world's top companies"
+                        name='Hazim The Fourth'
+                        org="None, he lonely"
+                        img={img}
+                    />
                 </div>
             </div>
         </div>

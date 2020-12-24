@@ -177,7 +177,7 @@ header {
 }
 
 #drop-header {
-  background-color: var(--color-accent);
+  background-color: white;
   position: fixed;
   padding: 20px 5%;
   display: none;
@@ -413,15 +413,23 @@ footer {
   padding-bottom: 20px;
 }
 
+.footer-title {
+  flex-basis: 100%;
+  padding: 10px 0;
+  font-size: 35px;
+  font-weight: 400;
+}
+
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-evenly;
   align-items: center;
-}
-
-.footer-text {
-  line-height: 40px;
+  line-height: 30px;
+  text-align: left;
 }
 
 .footer-copyright-text {
@@ -473,7 +481,6 @@ h1 {
 .sections-div, .test-div {
   padding: 100px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -508,11 +515,26 @@ h4 {
 }
 
 .test-div {
+  padding: 20px 0;
   display: flex;
-  justify-content: center;
-  overflow: hidden;
   width: 90%;
+  max-width: 900px;
   margin: auto;
+  overflow-x: scroll;
+  border-radius: 10px;
+}
+
+.test-div::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.test-div::-webkit-scrollbar {
+  background-color: rgba(128, 128, 128, 0.342);
+}
+
+.test-div::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
 }
 
 .quote-div {
@@ -558,6 +580,34 @@ h4 {
 }
 
 .about p {
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  font-size: 21px;
+  color: rgba(41, 41, 41, 1)
+}
+
+about p {
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  font-size: 21px;
+  color: rgba(41, 41, 41, 1)
+}
+
+about p {
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  font-size: 21px;
+  color: rgba(41, 41, 41, 1)
+}
+
+about p {
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  font-size: 21px;
+  color: rgba(41, 41, 41, 1)
+}
+
+about p {
   letter-spacing: -0.003em;
   line-height: 32px;
   font-size: 21px;

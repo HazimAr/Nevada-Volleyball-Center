@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Header from './Components/Header'
+import Header, { checkHeader } from './Components/Header'
 import Home from './Components/Home'
 import Covid19 from './Components/Covid19'
 import Faq from './Components/Faq'
@@ -12,6 +12,9 @@ import About from './Components/About'
 import Footer from './Components/Footer'
 import Contact from './Components/Contact'
 
+window.onscroll = function () {
+  checkHeader()
+}
 
 function App() {
   return (
