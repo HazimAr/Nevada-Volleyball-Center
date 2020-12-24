@@ -244,20 +244,16 @@ h1 {
 /*       Intro Component  */
 
 .intro-div {
-  height: 85vh;
-  min-height: 600px;
   background-color: var(--primary);
-  overflow: hidden;
+  overflow-x: hidden;
   color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.intro-inside-div {
-  display: flex;
-  width: 70%;
-  max-width: 1000px;
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
+.intro-text-div {
+  width: 200px;
 }
 
 @keyframes slideFromLeft {
@@ -420,6 +416,10 @@ footer {
   font-weight: 400;
 }
 
+.footer-title {
+  color: var(--primary);
+}
+
 .footer-top {
   display: flex;
   flex-wrap: wrap;
@@ -434,6 +434,10 @@ footer {
 
 .footer-copyright-text {
   font-size: 20px;
+}
+
+.footer-logo {
+  width: 00px;
 }
 
 .footer-socials {
@@ -462,6 +466,7 @@ footer {
 .mid {
   padding: 100px 0;
   width: 90%;
+  max-width: 1600px;
   margin: auto;
   text-align: left;
 }

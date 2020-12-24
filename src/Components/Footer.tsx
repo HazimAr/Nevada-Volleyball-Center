@@ -1,7 +1,8 @@
 import facebook from '../Images/facebook.svg'
 import insta from '../Images/instagram.svg'
 import youtube from '../Images/youtube.svg'
-import logo from '../Images/youtube.svg'
+import logo from '../Images/logo.png'
+
 export default function Footer() {
     return (
         <footer id='footer'>
@@ -9,7 +10,7 @@ export default function Footer() {
                 <div className='footer-section'>
                     <div className='footer-logo-section'>
                         <img src={logo} alt='' className='footer-logo'/>
-                        <p className='footer-tagline'> this is your  </p>
+                        <p className='footer-tagline'> this is your tagline  </p>
                     </div>
                     <div className='footer-about'>
                         <p className='footer-title'>About Us</p>
@@ -38,7 +39,7 @@ export default function Footer() {
                 </div>
                 <div className='footer-section'>
                     <p className='footer-title'>Helpful Links</p>
-                    <p >
+                    <p>
                         Services<br />
                         More<br />
                         Testimonials <br />
