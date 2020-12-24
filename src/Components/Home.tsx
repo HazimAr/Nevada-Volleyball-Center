@@ -35,15 +35,13 @@ export default function Home() {
         <div>
             <div>
                 <div className='intro-div' id='home'>
-                        <div className='intro-text-div'>
-                            <h1>We are Sparks Volleyball Club</h1>
-                            <p className='intro-button'>Learn More</p>
-                        </div>
-                        <div className='intro-img-div'>
-                            <img src={logo} alt='' className='intro-img' />
-                        </div>
+                    <div className='intro-text-div'>
+                        <h1>We are Sparks Volleyball Club</h1>
+                        <p className='button'>Learn More</p>
+                    </div>
+                    <img src={logo} alt='' className='intro-img' />
                 </div>
-                <img src={wave} alt='' />
+                <img id='wave' src={wave} alt='' />
             </div>
             <div className='mid'>
                 <div id='first'>

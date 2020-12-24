@@ -87,10 +87,6 @@ a {
   cursor: pointer;
 }
 
-/*        Header       */
-
-/*       Header        */
-
 @keyframes dropExpand {
   from {
     right: 0;
@@ -188,7 +184,7 @@ header {
 .header-links-div {
   display: flex;
   width: 60%;
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
 }
 
@@ -235,14 +231,6 @@ h1 {
   font-size: 60px;
 }
 
-/*        Home         */
-
-.home-text {
-  margin: 500px 0;
-}
-
-/*       Intro Component  */
-
 .intro-div {
   background-color: var(--primary);
   overflow-x: hidden;
@@ -252,8 +240,31 @@ h1 {
   align-items: center;
 }
 
+#wave {
+  margin-top: -200px;
+}
+
 .intro-text-div {
   width: 200px;
+  position: relative;
+  animation: slideFromLeft 1.5s forwards;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.intro-text-div h1 {
+  font-size: 60px;
+}
+
+.intro-text-div p {
+  margin: auto;
+  font-size: 28px;
+  background-color: white;
+  color: black;
+}
+
+.intro-text-div p:hover {
+  background-color: rgb(228, 228, 228);
+  cursor: pointer;
 }
 
 @keyframes slideFromLeft {
@@ -278,12 +289,6 @@ h1 {
     left: 0px;
     visibility: visible;
   }
-}
-
-.intro-text-div {
-  position: relative;
-  animation: slideFromLeft 1.5s forwards;
-  font-family: 'Russo One';
 }
 
 .intro-img {
@@ -437,7 +442,7 @@ footer {
 }
 
 .footer-logo {
-  width: 00px;
+  width: 150px;
 }
 
 .footer-socials {
