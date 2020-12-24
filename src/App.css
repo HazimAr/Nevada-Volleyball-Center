@@ -89,6 +89,84 @@ a {
 
 /*        Header       */
 
+/*       Header        */
+
+@keyframes dropExpand {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100vw;
+  }
+}
+
+@keyframes dropHide {
+  0% {
+    right: -110vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.dropdown-div {
+  position: fixed;
+  right: -110vw;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+}
+
+.dropdown-body {
+  background-color: var(--color-accent);
+  position: relative;
+  width: 75vw;
+}
+
+.drop-header-div {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  font-size: 30px;
+}
+
+.drop-exit-div {
+  height: 100vh;
+  width: 25vw;
+}
+
+.dropdown-link-div {
+  align-items: center;
+  display: flex;
+  height: 70%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+
+@keyframes headerComeOut {
+  from {
+    top: 0;
+  }
+  to {
+    top: -300px;
+  }
+}
+
+@keyframes headerComeIn {
+  from {
+    top: -300px;
+  }
+  to {
+    top: 0;
+  }
+}
+
 header {
   display: flex;
   width: 90%;
@@ -110,7 +188,7 @@ header {
 .header-links-div {
   display: flex;
   width: 60%;
-  max-width: 700px;
+  max-width: 600px;
   margin-left: auto;
 }
 
@@ -122,6 +200,13 @@ header {
 
 .header-link:hover {
   font-size: 24px;
+}
+
+#header-register {
+  border-radius: 1000px;
+  padding: 9px;
+  background-color: #9e2d2d;
+  color: white;
 }
 
 .header-menu-img {
@@ -143,10 +228,114 @@ header {
   }
 }
 
+h1 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 60px;
+}
+
 /*        Home         */
 
 .home-text {
   margin: 500px 0;
+}
+
+/*       Intro Component  */
+
+.intro-div {
+  height: 85vh;
+  min-height: 600px;
+  background-color: var(--primary);
+  overflow: hidden;
+  color: var(--accent);
+}
+
+.intro-inside-div {
+  display: flex;
+  width: 70%;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes slideFromLeft {
+  from {
+    left: -1500px;
+    -webkit-transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  to {
+    left: 0px;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    left: 1500px;
+    visibility: visible;
+  }
+  to {
+    left: 0px;
+    visibility: visible;
+  }
+}
+
+.intro-text-div {
+  position: relative;
+  animation: slideFromLeft 1.5s forwards;
+  font-family: 'Russo One';
+}
+
+.intro-img {
+  visibility: hidden;
+  width: 800px;
+  position: relative;
+  animation: slideFromRight 2s 0.5s forwards;
+}
+
+.intro-button {
+  font-weight: bold;
+  background-color: var(--color-accent);
+  color: var(--font-color);
+  font-size: 27px;
+  margin: auto;
+  width: fit-content;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all ease-in-out 0.3s;
+  border: none;
+}
+
+.intro-button:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1150px) {
+  .intro-div {
+    height: unset;
+    padding: 20px 0;
+  }
+  .intro-inside-div {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .intro-img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .intro-img {
+    width: 450px;
+  }
 }
 
 /*     Contact    */
@@ -218,14 +407,21 @@ textarea {
 /*       Footer        */
 
 footer {
-  border-top: solid var(--primary) 1px;
+  border-top: solid var(--primary) 0px;
   background-color: var(--secondary);
   color: var(--accent);
   padding-bottom: 20px;
 }
 
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-text {
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .footer-copyright-text {
@@ -233,10 +429,10 @@ footer {
 }
 
 .footer-socials {
-  width: 40px;
+  width: 50px;
   border-radius: 50%;
   transition: all ease-in-out 0.3s;
-  padding: 2px;
+  padding: 0px 25px;
 }
 
 .footer-socials:hover {
@@ -245,7 +441,7 @@ footer {
 
 .footer-socials-div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   max-width: 600px;
   margin: auto;
 }

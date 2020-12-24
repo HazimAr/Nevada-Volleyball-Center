@@ -1,6 +1,7 @@
 import img from '../Images/down.svg'
 import wave from '../Images/wave.svg'
 import quote from '../Images/trendingUp.svg'
+import logo from '../Images/down.svg'
 
 function Section(props: { img: any, title: string, text: string }) {
     return (
@@ -35,9 +36,17 @@ export default function Home() {
     return (
         <div>
             <div>
-                <div className='main-div'>
-
+                <div className='intro-div' id='home'>
+                    <div className='intro-inside-div'>
+                        <div className='intro-text-div'>
+                        <h1>We are Sparks Volleyball Club</h1>
+                        <p className='intro-button'>Learn More</p>
+                    </div>
+                <div className='intro-img-div'>
+                    <img src={logo} alt='' className='intro-img' />
                 </div>
+            </div>
+        </div>
                 <img src={wave} alt='' />
             </div>
             <div className='mid'>
