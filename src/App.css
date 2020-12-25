@@ -455,7 +455,7 @@ footer {
 }
 
 .footer-socials:hover {
-  background-color: var(--secondary);
+  background-color: transparent;
 }
 
 .footer-socials-div {

@@ -12,6 +12,8 @@ export default function Footer() {
                         <img src={logo} alt='' className='footer-logo'/>
                         <p className='footer-tagline'> this is your tagline  </p>
                     </div>
+                </div>
+                <div className='footer-section'>
                     <div className='footer-about'>
                         <p className='footer-title'>About Us</p>
                             Lorem ipsum dolor sit amet, consectetur <br />
