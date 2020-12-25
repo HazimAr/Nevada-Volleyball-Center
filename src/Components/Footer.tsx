@@ -57,6 +57,21 @@ export default function Footer() {
                     <a href='https://www.instagram.com/sparks_vbc_lv/' target='_blank' rel='noreferrer noopener' className='footer-img-link'><img src={insta} alt='' className='footer-socials' /></a>
                     <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A' target='_blank' rel='noreferrer noopener' className='footer-img-link'><img src={youtube} alt='' className='footer-socials' /></a>
                 </div>
+                <div className="footer-to-top-div">
+                    <div className="footer-socials-div">
+                        <svg id="toTop" className="footer-social-div" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-widtrokeh="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none">
+
+                            </path>
+                            <polyline points="7 7 12 12 17 7">
+
+                            </polyline>
+                            <polyline points="7 13 12 18 17 13">
+
+                            </polyline>
+                        </svg>
+                    </div>
+                </div>
                 <p>© 2020 Nevada VolleyBall Center All Rights Reserved</p>
             </div>
         </footer>
