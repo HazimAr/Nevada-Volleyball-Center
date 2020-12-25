@@ -55,6 +55,7 @@ export default function Footer() {
                     <a href='https://www.instagram.com/sparks_vbc_lv/' target='_blank' rel='noreferrer noopener' className='footer-img-link'><img src={insta} alt='' className='footer-socials' /></a>
                     <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A' target='_blank' rel='noreferrer noopener' className='footer-img-link'><img src={youtube} alt='' className='footer-socials' /></a>
                 </div>
+                <p>© 2020 Nevada VolleyBall Center All Rights Reserved</p>
             </div>
         </footer>
     )

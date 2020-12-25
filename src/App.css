@@ -428,10 +428,10 @@ footer {
 .footer-top {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: auto;
-  justify-content: space-evenly;
   align-items: center;
   line-height: 30px;
   text-align: left;
@@ -447,13 +447,15 @@ footer {
 
 .footer-socials {
   width: 50px;
-  border-radius: 50%;
+  border-radius: 100%;
   transition: all ease-in-out 0.3s;
-  padding: 0px 25px;
+  padding: 2px;
+  margin: 0px 20px;
+  background-color: var(--primary);
 }
 
 .footer-socials:hover {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .footer-socials-div {
