@@ -16,8 +16,8 @@ html {
 }
 
 :root {
-  --primary: #9e2d2d;
-  --secondary: #1f1f1f;
+  --primary: #1f1f1f;
+  --secondary: #9e2d2d;
   --accent: #ffffff;
   --font: #ffffff;
   --font2: #000000;
@@ -168,8 +168,8 @@ header {
   width: 90%;
   z-index: 100;
   padding: 20px 5%;
-  background-color: var(--color-primary);
-  color: var(--font-color-o);
+  background-color: var(--primary);
+  color: var(--font);
 }
 
 #drop-header {
@@ -177,7 +177,7 @@ header {
   position: fixed;
   padding: 20px 5%;
   display: none;
-  color: var(--font-color);
+  color: var(--font2);
   box-shadow: rgb(0, 0, 0, 0.3) 0px 13px 29px;
 }
 
@@ -258,12 +258,13 @@ h1 {
 .intro-text-div p {
   margin: auto;
   font-size: 28px;
-  background-color: white;
-  color: black;
+  background-color: var(--secondary);
+  color: var(--accent);
 }
 
 .intro-text-div p:hover {
-  background-color: rgb(228, 228, 228);
+  background-color: var(--accent);
+  color: var(--primary);
   cursor: pointer;
 }
 
@@ -300,7 +301,7 @@ h1 {
 
 .intro-button {
   font-weight: bold;
-  background-color: var(--color-accent);
+  background-color: var(--accent);
   color: var(--font-color);
   font-size: 27px;
   margin: auto;
@@ -408,7 +409,6 @@ textarea {
 /*       Footer        */
 
 footer {
-  border-top: solid var(--primary) 0px;
   background-color: var(--secondary);
   color: var(--accent);
   padding-bottom: 20px;
@@ -422,7 +422,7 @@ footer {
 }
 
 .footer-title {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .footer-top {
@@ -507,9 +507,9 @@ h2 {
 }
 
 .button {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   border-radius: 20px;
-  color: white;
+  color: var(--accent);
   margin: 10px 0;
   padding: 10px 30px;
   width: fit-content;
@@ -517,7 +517,7 @@ h2 {
 }
 
 .button:hover {
-  background-color: #b64f4f;
+  background-color: ;
 }
 
 /* Quotes */
