@@ -517,7 +517,7 @@ h2 {
 }
 
 .button:hover {
-  background-color: ;
+  background-color: var(--primary);
 }
 
 /* Quotes */
@@ -599,30 +599,25 @@ h4 {
   color: rgba(41, 41, 41, 1)
 }
 
-about p {
-  letter-spacing: -0.003em;
-  line-height: 32px;
-  font-size: 21px;
-  color: rgba(41, 41, 41, 1)
+.price-table {
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  display: table;
+  background-color: #d4d4d2;
+  word-wrap: break-word;
 }
 
-about p {
-  letter-spacing: -0.003em;
-  line-height: 32px;
-  font-size: 21px;
-  color: rgba(41, 41, 41, 1)
+.price-table tr, .price-table td {
+  padding: 20px 30px;
+  background-color: white;
 }
 
-about p {
-  letter-spacing: -0.003em;
-  line-height: 32px;
-  font-size: 21px;
-  color: rgba(41, 41, 41, 1)
+th {
+  font-weight: 500;
+  width: 70%;
 }
 
-about p {
-  letter-spacing: -0.003em;
-  line-height: 32px;
-  font-size: 21px;
-  color: rgba(41, 41, 41, 1)
+#tbheader th {
+  background-color: rgb(194, 194, 194);
 }

@@ -11,6 +11,7 @@ import TermsConditions from './Components/TermsConditions'
 import About from './Components/About'
 import Footer from './Components/Footer'
 import Contact from './Components/Contact'
+import Pricing from './Components/Pricing'
 
 window.onscroll = function () {
   checkHeader()
@@ -27,6 +28,7 @@ function App() {
         <Route path='/covid-19' component={Covid19} />
         <Route path='/terms-conditions' component={TermsConditions} />
         <Route path='/contact' component={Contact} />
+        <Route path='/pricing' component={Pricing} />
         <Route path='/' component={Home} />
 
       </Switch>

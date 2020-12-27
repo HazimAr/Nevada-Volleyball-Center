@@ -30,6 +30,7 @@ function HeaderContent(props: { id?: string }) {
                 <a href='/faq' className='header-link'>FAQ</a>
                 <a href='/terms-conditions' className='header-link'>Terms and Conditions</a>
                 <a href='/contact' className='header-link'>Contact</a>
+                <a href='/pricing' className='header-link'>Pricing</a>
             </div>
             <svg onClick={invertDropDownMenu} className='header-menu-img' xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
