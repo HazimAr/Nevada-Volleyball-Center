@@ -26,7 +26,7 @@ const theDataBitch: data[] = [
 
     },
     {
-        title: "The exponent of gay is approximate",
+        title: "50/hr 12months+ 55/hr 6-12 months 60/hr less then 6 months",
         basic: '...',
         standard: 'Hazimos',
         premium: 'thal;kdfj'
@@ -60,9 +60,9 @@ export default function Pricing() {
                 <thead>
                     <tr id='tbheader'>
                         <th></th>
-                        <th>1 Hour</th>
-                        <th>2 Hours</th>
-                        <th>3 Hours</th>
+                        <th>less then 6 months</th>
+                        <th>6-12 months</th>
+                        <th>12+ months</th>
                     </tr>
                 </thead>
                 <tbody>
