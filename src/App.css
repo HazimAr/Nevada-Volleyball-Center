@@ -452,7 +452,7 @@ footer {
   transition: all ease-in-out 0.3s;
   padding: 2px;
   margin: 0px 20px;
-  background-color: var(--primary);
+  background-color: transparent;
 }
 
 .footer-socials:hover {

@@ -1,35 +1,14 @@
 interface data {
-    title: string,
     basic: string,
     standard: string,
     premium: string
 }
 const theDataBitch: data[] = [
     {
-        title: "The exponent of gay is approximate",
-        basic: '...',
-        standard: 'Hazimos',
-        premium: 'thal;kdfj'
-    },
-    {
-        title: "The exponent of gay is approximate",
-        basic: '...',
-        standard: 'Hazimos',
-        premium: 'thal;kdfj'
+        basic: '$60/hr',
+        standard: '$55/hr',
+        premium: '$50/hr'
 
-    },
-    {
-        title: "The exponent of gay is approximate",
-        basic: '...',
-        standard: 'Hazimos',
-        premium: 'thal;kdfj'
-
-    },
-    {
-        title: "50/hr 12months+ 55/hr 6-12 months 60/hr less then 6 months",
-        basic: '...',
-        standard: 'Hazimos',
-        premium: 'thal;kdfj'
     }
 
 ]
@@ -38,7 +17,6 @@ function Rows(props: { data: data[] }): any {
     for (let i = 0; i < props.data.length; i++) {
         out.push(
             <tr>
-                <th>{props.data[i].title}</th>
                 <td>{props.data[i].basic}</td>
                 <td>{props.data[i].standard}</td>
                 <td>{props.data[i].premium}</td>
@@ -57,9 +35,9 @@ export default function Pricing() {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae architecto vitae, quibusdam quisquam commodi a repudiandae rerum provident eos facere numquam! Error nam possimus in dicta tempore? Exercitationem, ullam praesentium.</p>
 
             <table className='price-table'>
+                <title> im a title</title>
                 <thead>
                     <tr id='tbheader'>
-                        <th></th>
                         <th>less then 6 months</th>
                         <th>6-12 months</th>
                         <th>12+ months</th>

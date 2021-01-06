@@ -55,7 +55,6 @@ export default function Footer() {
                 <div className='footer-socials-div'>
                     <a href='https://www.facebook.com/SparksVBCLV' target='_blank' rel='noreferrer noopener' className='footer-img-link'><img src={facebook} alt='' className='footer-socials' /></a>
                     <a href='https://www.instagram.com/sparks_vbc_lv/' target='_blank' rel='noreferrer noopener' className='footer-img-link'><img src={insta} alt='' className='footer-socials' /></a>
-                    <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A' target='_blank' rel='noreferrer noopener' className='footer-img-link'><img src={youtube} alt='' className='footer-socials' /></a>
                 </div>
                 <div className="footer-to-top-div">
                     <div className="footer-socials-div">
