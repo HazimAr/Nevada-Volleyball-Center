@@ -1,53 +1,37 @@
-export function checkHeader() {
-    const header: any = document.getElementById('drop-header')
-    if (window.scrollY > 100) {
-        header.style.animation = 'headerComeIn 1s forwards'
-        header.style.display = 'flex'
-    }
-    else {
-        header.style.animation = 'headerComeOut 1s forwards' // TODO fade out?
-    }
-}
-let isActive = false;
-function invertDropDownMenu() {
-    const element: any = document.getElementById('dropdown')
-    if (isActive) {
-        element.style.animation = 'dropExpand 1s forwards'
-        isActive = false
-    }
-    else {
-        element.style.animation = 'dropHide 1s forwards'
-        isActive = true
-    }
-}
-function HeaderContent(props: { id?: string }) {
-    return (
-        <header id={props.id}>
-            <div className='header-links-div'>
-                <a href='/' className='header-link'>Home</a>
-                <a href='/about' className='header-link'>About Us</a>
-                <a href='/covid-19' className='header-link'>Covid-19</a>
-                <a href='/faq' className='header-link'>FAQ</a>
-                <a href='/terms-conditions' className='header-link'>Terms and Conditions</a>
-                <a href='/contact' className='header-link'>Contact</a>
-                <a href='/pricing' className='header-link'>Pricing</a>
-            </div>
-            <svg onClick={invertDropDownMenu} className='header-menu-img' xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
-            </svg>
-        </header>
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import styled from "styled-components";
 
-    )
-}
-
-export default function Headers() {
-    return (
-        <div>
-            <HeaderContent />
-            <HeaderContent id='drop-header' />
-        </div>
-    )
+const Header = styled.header`
+	background-color: #1a202c;
+	padding: 5px 50px;
+	display: flex;
+	box-sizing: border-box;
+	border-top: 5px #5cfff1 solid;
+	justify-content: space-between;
+	align-items: center;
+`;
+const StyledLink = styled.a`
+	margin: 0 20px;
+`;
+// eslint-disable-next-line import/no-default-export
+export default function Main(): JSX.Element {
+	return (
+		<Header>
+			<h2>NextJS Boilerplate</h2>
+			<div>
+				<StyledLink
+					href="https://github.com/NikSchaefer/nextjs-boilerplate"
+					aria-label="Github"
+				>
+					<FaGithub size="30px" />
+				</StyledLink>
+				<StyledLink
+					href="https://www.linkedin.com/in/nik-schaefer/"
+					aria-label="LinkedIn"
+				>
+					<FaLinkedin size="30px" />
+				</StyledLink>
+			</div>
+		</Header>
+	);
 }
