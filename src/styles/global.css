@@ -33,3 +33,7 @@ textarea {
 	background-color: transparent;
 	border: none;
 }
+
+h1, h2, h3 {
+	font-weight: 400;
+}

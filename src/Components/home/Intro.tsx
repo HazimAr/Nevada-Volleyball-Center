@@ -1,6 +1,4 @@
-import { StyledButton } from "@styles/index.theme";
 import Image from "next/image";
-import Link from "next/link";
 import styled from "styled-components";
 
 import { COMPANY_NAME } from "../../config";
@@ -56,9 +54,6 @@ export default function Intro(): JSX.Element {
 						We provide 100% custom coded websites with superior
 						search engine optimized results
 					</p>
-					<Link href="/contact">
-						<StyledButton>Contact Us</StyledButton>
-					</Link>
 				</StyledText>
 				<ImgDiv>
 					<Image

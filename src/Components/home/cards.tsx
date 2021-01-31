@@ -1,7 +1,9 @@
 import Link from "next/link";
-import styled from "styled-components";
 import { FaAirbnb } from "react-icons/fa";
+import styled from "styled-components";
+
 const Container = styled.section`
+	margin-top: -150px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -10,8 +12,8 @@ const Container = styled.section`
 
 const StyledCard = styled.div`
 	max-width: 300px;
-    margin: 20px;
-    height: 400px;
+	margin: 20px;
+	height: 400px;
 	padding: 20px;
 	padding-bottom: 40px;
 	background-color: #f6f7f9;
@@ -24,13 +26,15 @@ const StyledCard = styled.div`
 		padding-bottom: 60px;
 	}
 `;
-const Button = styled.button`
+export const Button = styled.button`
 	text-transform: uppercase;
-    padding: 10px 0;
-    border-bottom: var(--secondary) 3px solid;
-    &:hover {
-        cursor: pointer;
-    }
+	padding: 10px 0;
+	width: fit-content;
+	font-size: 18px;
+	border-bottom: var(--secondary) 3px solid;
+	&:hover {
+		cursor: pointer;
+	}
 `;
 function Card(props: {
 	// eslint-disable-next-line react/no-unused-prop-types
@@ -40,8 +44,7 @@ function Card(props: {
 	link: string;
 }): JSX.Element {
 	return (
-        <StyledCard>
-            
+		<StyledCard>
 			<props.Image />
 			<h2>{props.title}</h2>
 			<p>{props.description}</p>

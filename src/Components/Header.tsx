@@ -5,11 +5,14 @@ const Header = styled.header`
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
-	padding: 5px 5%;
+	padding: 0 5%;
 	align-items: center;
 `;
 const StyledUl = styled.ul`
 	display: flex;
+	@media (max-width: 800px) {
+		display: none;
+	}
 `;
 const StyledLink = styled.li`
 	margin: 0 20px;
