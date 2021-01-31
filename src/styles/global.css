@@ -7,24 +7,13 @@ html {
 	scroll-behavior: smooth;
 	text-align: center;
 	overflow-x: hidden;
-	line-height: 1.7;
-	font-size: 16px;
-	font-family: "Sarabun", -apple-system, BlinkMacSystemFont, "Segoe UI",
-		"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
-	background-color: var(--primary);
 }
-
 :root {
-	--highlight: #00b7ff;
-	--hover: #008bcc;
-	--secondary: #1b202c;
-	--contact: #eaf4ff;
-	--gray: #ffffff;
-	--primary: #1b202c;
-	--text: white;
+	--primary:#535351;
+	--secondary:#b52f2c;
+	--accent: #c7c6b5;
+	--text: black;
 }
-
 a {
 	color: inherit;
 	text-decoration: none;
