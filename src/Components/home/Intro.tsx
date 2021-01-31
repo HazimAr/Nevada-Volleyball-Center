@@ -1,3 +1,4 @@
+import { StyledButton, Span } from "@styles/index.theme";
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
@@ -11,7 +12,7 @@ const Container = styled.section`
 `;
 const Inside = styled.div`
 	display: flex;
-	width: 90%;
+	width: 100%;
 	max-width: 1000px;
 	height: 100%;
 	margin: auto;
@@ -23,7 +24,7 @@ const Inside = styled.div`
 	}
 `;
 const StyledText = styled.div`
-	max-width: 400px;
+	max-width: 1200px;
 	text-align: left;
 	font-size: 20px;
 `;
@@ -48,14 +49,15 @@ export default function Intro(): JSX.Element {
 			<Inside>
 				<StyledText id="intro__text">
 					<StyledH1>
-						Your Local Puget Sound Construction Supply Specialists
+						{COMPANY_NAME} <br />
+						<Span>Defying</Span> Reality
 					</StyledH1>
 					<p>
 						We provide 100% custom coded websites with superior
 						search engine optimized results
 					</p>
 					<Link href="/contact">
-						<p>Contact Us</p>
+						<StyledButton>Contact Us</StyledButton>
 					</Link>
 				</StyledText>
 				<ImgDiv>
