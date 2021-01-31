@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import styled from "styled-components";
 
 const Header = styled.header`
@@ -6,16 +6,16 @@ const Header = styled.header`
 	justify-content: space-between;
 	box-sizing: border-box;
 	padding: 5px 5%;
-	align-items:center;
+	align-items: center;
 `;
 const StyledUl = styled.ul`
-	display:flex;
-`
+	display: flex;
+`;
 const StyledLink = styled.li`
-	margin:0 20px;
+	margin: 0 20px;
 	font-size: 22px;
 	text-transform: uppercase;
-`
+`;
 type a = {
 	title: string;
 	link: string;
@@ -34,13 +34,13 @@ export default function Main(): JSX.Element {
 		<Header>
 			<h1>Elegant Themes</h1>
 			<StyledUl>
-				{headerStuff.map(data => 
+				{headerStuff.map((data) => (
 					<StyledLink key={data.title}>
 						<Link href={data.link}>
-							<a>{data.title }</a>
+							<a>{data.title}</a>
 						</Link>
 					</StyledLink>
-				)}
+				))}
 			</StyledUl>
 		</Header>
 	);

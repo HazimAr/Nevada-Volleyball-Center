@@ -6,7 +6,8 @@ const IS_BROWSER = typeof window !== "undefined";
 
 const COMPANY_NAME = "Nevada Volleyball Center";
 const COMPANY_EMAIL = "info@nevadavolleyballcenter.com";
-const EMAIL_LIST = "nikkschaefer@gmail.com, hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
+const EMAIL_LIST =
+	"nikkschaefer@gmail.com, hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
 
 export {
 	GA_TRACKING_ID,

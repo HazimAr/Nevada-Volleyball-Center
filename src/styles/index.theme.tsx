@@ -9,7 +9,6 @@ const StyledButton = styled.button`
 	font-weight: 500;
 	transition: all ease-in-out 0.4s;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	font-family: "Sarabun", sans-serif;
 	border-radius: 30px;
 	&:hover {
 		cursor: pointer;
@@ -18,6 +17,5 @@ const StyledButton = styled.button`
 `;
 const Span = styled.span`
 	color: var(--highlight);
-	font-family: "Segoe Print";
 `;
 export { StyledButton, Span };

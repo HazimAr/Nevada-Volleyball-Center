@@ -1,4 +1,4 @@
-import { StyledButton, Span } from "@styles/index.theme";
+import { StyledButton } from "@styles/index.theme";
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
@@ -9,6 +9,7 @@ const Container = styled.section`
 	min-height: 600px;
 	height: 50vh;
 	background-color: var(--secondary);
+	color: var(--text-light);
 `;
 const Inside = styled.div`
 	display: flex;
@@ -50,7 +51,6 @@ export default function Intro(): JSX.Element {
 				<StyledText id="intro__text">
 					<StyledH1>
 						{COMPANY_NAME} <br />
-						<Span>Defying</Span> Reality
 					</StyledH1>
 					<p>
 						We provide 100% custom coded websites with superior

@@ -5,7 +5,7 @@ import { COMPANY_NAME, COMPANY_EMAIL } from "../config";
 
 const Footer = styled.footer`
 	background-color: var(--secondary);
-	color: var(--text);
+	color: var(--text-light);
 `;
 const FooterInside = styled.div`
 	width: 90%;
@@ -24,6 +24,7 @@ const StyledCopyright = styled.p`
 	margin: 0;
 	font-size: 14px;
 	padding: 20px 0;
+	color: var(--text-light);
 	font-size: 20px;
 	background-color: var(--secondary);
 	@media (max-width: 700px) {
@@ -39,7 +40,6 @@ const StyledContact = styled.div`
 	}
 `;
 const StyledLink = styled.a`
-	border-top: solid gray 1px;
 	padding: 20px;
 	margin: 20px 0;
 `;
@@ -60,7 +60,7 @@ export default function footer(): JSX.Element {
 						<Image
 							height={90}
 							width={270}
-							src="/Images/LogoDark.png"
+							src="/Images/logo.png"
 							alt={`${COMPANY_NAME} Logo`}
 						/>
 						<p>
@@ -73,7 +73,7 @@ export default function footer(): JSX.Element {
 					</StyledContact>
 					<StyledList>
 						<li>
-							<h2>Services</h2>
+							<h2>Links</h2>
 						</li>
 						<li>Web Development</li>
 						<li>Database Infrastructure</li>
