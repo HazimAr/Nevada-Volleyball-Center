@@ -1,9 +1,10 @@
-import styled from "styled-components";
+import Intro from "@components/home/Intro";
 
-const Container = styled.main``;
 // eslint-disable-next-line import/no-default-export
 export default function Home(): JSX.Element {
 	return (
-		<Container />
+		<>
+			<Intro />
+		</>
 	);
 }

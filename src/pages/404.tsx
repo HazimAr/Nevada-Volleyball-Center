@@ -5,7 +5,5 @@ export default function FourOhFour(): JSX.Element {
 		// redirects user to home
 		window.location.href = "/";
 	}, []);
-	return (
-		<h1>404 Page not Found</h1>
-	);
+	return <h1>404 Page not Found</h1>;
 }
