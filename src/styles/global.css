@@ -11,8 +11,8 @@ html {
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 :root {
-	--primary: #535351;
 	--secondary: #b52f2c;
+	--primary: #535351;
 	--accent: #c7c6b5;
 	--text: rgb(32, 32, 32);
 	--text-light: white;
@@ -34,6 +34,8 @@ textarea {
 	border: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	font-weight: 400;
 }

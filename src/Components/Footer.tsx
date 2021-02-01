@@ -1,3 +1,4 @@
+import { Span } from "@styles/index.theme";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -12,7 +13,7 @@ const FooterInside = styled.div`
 	max-width: 1200px;
 	padding: 5% 0;
 	margin: auto;
-	border-top: var(--primary) solid 1px;
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -95,6 +96,8 @@ export default function footer(): JSX.Element {
 				Copyright © 2021 |{" "}
 				<a href="https://webdefy.tech">{COMPANY_NAME}</a> | All Rights
 				Reserved
+				<br />
+				Developed By <a style={{color:"var(--secondary)"}} href="https://webdefy.tech/">Webdefyer</a>
 			</StyledCopyright>
 		</>
 	);

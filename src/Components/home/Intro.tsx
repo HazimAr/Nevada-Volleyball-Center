@@ -8,6 +8,8 @@ const Container = styled.section`
 	height: 50vh;
 	background-color: var(--secondary);
 	color: var(--text-light);
+	position:relative;
+	/* background-image: url("/Images/IMG_7257.png"); */
 `;
 const Inside = styled.div`
 	display: flex;
@@ -40,11 +42,22 @@ const ImgDiv = styled.div`
 		width: 400;
 	}
 `;
+const Dip = styled.div`
+	height: 90px;
+	width: 100%;
+	background: #fff;
+	clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+	position: absolute;
+	bottom: -2px;
+`;
 
 // eslint-disable-next-line import/no-default-export
 export default function Intro(): JSX.Element {
 	return (
 		<Container>
+			<Dip aria-hidden="true">
+				<Image src="/" layout='fill' />
+			</Dip>
 			<Inside>
 				<StyledText id="intro__text">
 					<StyledH1>
