@@ -97,7 +97,13 @@ export default function footer(): JSX.Element {
 				<a href="https://webdefy.tech">{COMPANY_NAME}</a> | All Rights
 				Reserved
 				<br />
-				Developed By <a style={{color:"var(--secondary)"}} href="https://webdefy.tech/">Webdefyer</a>
+				Developed By{" "}
+				<a
+					style={{ color: "var(--secondary)" }}
+					href="https://webdefy.tech/"
+				>
+					Webdefyer
+				</a>
 			</StyledCopyright>
 		</>
 	);

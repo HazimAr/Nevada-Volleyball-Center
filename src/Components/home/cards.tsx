@@ -8,6 +8,7 @@ const Container = styled.section`
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 50px 0;
+	z-index: 1000;
 `;
 
 const StyledCard = styled.div`
@@ -18,12 +19,13 @@ const StyledCard = styled.div`
 	padding-bottom: 40px;
 	background-color: #f6f7f9;
 	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 85%);
-	&:first-child {
-		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%);
+
+	&:nth-child(3) {
+		clip-path: polygon(100% 0, 100% 83%, 53% 92%, 0 85%, 0 0);
 	}
 	&:nth-child(2) {
-		clip-path: polygon(100% 0, 100% 83%, 53% 92%, 0 85%, 0 0);
 		padding-bottom: 60px;
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%);
 	}
 `;
 export const Button = styled.button`
@@ -56,7 +58,13 @@ function Card(props: {
 		</StyledCard>
 	);
 }
-
+const Div = styled.div`
+	background-color: white;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	clip-path: polygon(49% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+`;
 function Img() {
 	return <FaAirbnb size="60px" />;
 }
@@ -65,6 +73,7 @@ function Img() {
 export default function Cards(): JSX.Element {
 	return (
 		<Container>
+			<Div />
 			<Card
 				Image={Img}
 				link="/link"

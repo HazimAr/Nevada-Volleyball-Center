@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaAccessibleIcon, FaCheckCircle, FaWrench, FaYoast } from "react-icons/fa";
+import {
+	FaAccessibleIcon,
+	FaCheckCircle,
+	FaWrench,
+	FaYoast,
+} from "react-icons/fa";
 import styled from "styled-components";
 
 import { Button } from "./cards";
@@ -11,6 +16,8 @@ const Section = styled.section`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	z-index: 2000;
+	background-color:white;
 	& div {
 		display: flex;
 		flex-wrap: wrap;
@@ -53,9 +60,9 @@ const StyledCard = styled.div`
 		text-transform: uppercase;
 		margin-bottom: 0;
 	}
-    p {
-        font-size: 20px;
-    }
+	p {
+		font-size: 20px;
+	}
 `;
 const CardContainer = styled.div`
 	display: flex;
@@ -67,32 +74,47 @@ const CardContainer = styled.div`
 `;
 
 function Img() {
-	return <FaWrench color="var(--secondary)" size="40px" className="card-img" />;
+	return (
+		<FaWrench color="var(--secondary)" size="40px" className="card-img" />
+	);
 }
 function Img2() {
-	return <FaAccessibleIcon color="var(--secondary)" size="40px" className="card-img" />;
+	return (
+		<FaAccessibleIcon
+			color="var(--secondary)"
+			size="40px"
+			className="card-img"
+		/>
+	);
 }
 function Img3() {
-	return <FaCheckCircle color="var(--secondary)" size="40px" className="card-img" />;
+	return (
+		<FaCheckCircle
+			color="var(--secondary)"
+			size="40px"
+			className="card-img"
+		/>
+	);
 }
 function Img4() {
-	return <FaYoast color="var(--secondary)" size="40px" className="card-img" />;
+	return (
+		<FaYoast color="var(--secondary)" size="40px" className="card-img" />
+	);
 }
 
-function Card(props: {
-	// eslint-disable-next-line react/no-unused-prop-types
-	image: Function;
+function Card(Props: {
+	Image: Function;
 	title: string;
 	text: string;
 	link: string;
 }) {
 	return (
 		<StyledCard>
-			<props.image />
-			<h2>{props.title}</h2>
-			<p>{props.text}</p>
-			<Link href={props.link}>
-				<Button>Learn more {"=>"}</Button>
+			<Props.Image />
+			<h2>{Props.title}</h2>
+			<p>{Props.text}</p>
+			<Link href={Props.link}>
+				<Button aria-label={`${Props.title} Article`}>Learn more {"=>"}</Button>
 			</Link>
 		</StyledCard>
 	);
@@ -113,30 +135,30 @@ export default function Promise(): JSX.Element {
 						construction material needs
 					</p>
 				</StyledTextDiv>
-				<Image src="/logo.png" height={400} width={400} />
+				<Image alt="" src="/logo.png" height={400} width={400} />
 			</div>
 			<CardContainer>
 				<Card
 					link="/"
-					image={Img}
+					Image={Img}
 					title="for hazimos"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
-					image={Img2}
+					Image={Img2}
 					title="for hazimos"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
-					image={Img3}
+					Image={Img3}
 					title="for hazimos"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
-					image={Img4}
+					Image={Img4}
 					title="for hazimos"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>

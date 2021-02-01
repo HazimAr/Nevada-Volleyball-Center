@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styled from "styled-components";
 
 import { COMPANY_NAME } from "../../config";
@@ -6,10 +5,14 @@ import { COMPANY_NAME } from "../../config";
 const Container = styled.section`
 	min-height: 600px;
 	height: 50vh;
-	background-color: var(--secondary);
 	color: var(--text-light);
-	position:relative;
-	/* background-image: url("/Images/IMG_7257.png"); */
+`;
+const StyledImage = styled.img`
+	z-index: -1;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
 `;
 const Inside = styled.div`
 	display: flex;
@@ -35,50 +38,24 @@ const StyledH1 = styled.h1`
 	font-weight: 750;
 	margin-bottom: 20px;
 `;
-const ImgDiv = styled.div`
-	animation: 3s bounce infinite 0.8s linear both;
-	@media (max-width: 1100px) {
-		height: 400;
-		width: 400;
-	}
-`;
-const Dip = styled.div`
-	height: 90px;
-	width: 100%;
-	background: #fff;
-	clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
-	position: absolute;
-	bottom: -2px;
-`;
-
 // eslint-disable-next-line import/no-default-export
 export default function Intro(): JSX.Element {
 	return (
-		<Container>
-			<Dip aria-hidden="true">
-				<Image src="/" layout='fill' />
-			</Dip>
-			<Inside>
-				<StyledText id="intro__text">
-					<StyledH1>
-						{COMPANY_NAME} <br />
-					</StyledH1>
-					<p>
-						We provide 100% custom coded websites with superior
-						search engine optimized results
-					</p>
-				</StyledText>
-				<ImgDiv>
-					<Image
-						src="/pack/rk.svg"
-						layout="intrinsic"
-						height={500}
-						width={500}
-						id="intro__img"
-						alt=""
-					/>
-				</ImgDiv>
-			</Inside>
-		</Container>
+		<>
+			<StyledImage src="/Images/IMG_7244.png" alt="" />
+			<Container>
+				<Inside>
+					<StyledText id="intro__text">
+						<StyledH1>
+							{COMPANY_NAME} <br />
+						</StyledH1>
+						<p>
+							We provide 100% custom coded websites with superior
+							search engine optimized results
+						</p>
+					</StyledText>
+				</Inside>
+			</Container>
+		</>
 	);
 }

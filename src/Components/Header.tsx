@@ -2,6 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const Header = styled.header`
+	background-color: white;
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;

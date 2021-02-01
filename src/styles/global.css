@@ -39,3 +39,7 @@ h2,
 h3 {
 	font-weight: 400;
 }
+
+* {
+	z-index: inherit;
+}
