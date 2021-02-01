@@ -17,7 +17,7 @@ const Section = styled.section`
 	flex-direction: column;
 	justify-content: center;
 	z-index: 2000;
-	background-color:white;
+	background-color: white;
 	& div {
 		display: flex;
 		flex-wrap: wrap;
@@ -114,7 +114,9 @@ function Card(Props: {
 			<h2>{Props.title}</h2>
 			<p>{Props.text}</p>
 			<Link href={Props.link}>
-				<Button aria-label={`${Props.title} Article`}>Learn more {"=>"}</Button>
+				<Button aria-label={`${Props.title} Article`}>
+					Learn more {"=>"}
+				</Button>
 			</Link>
 		</StyledCard>
 	);
@@ -135,7 +137,7 @@ export default function Promise(): JSX.Element {
 						construction material needs
 					</p>
 				</StyledTextDiv>
-				<Image alt="" src="/logo.png" height={400} width={400} />
+				<Image alt="" src="/Images/IMG_7230.png" height={288} width={384} />
 			</div>
 			<CardContainer>
 				<Card

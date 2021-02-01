@@ -66,7 +66,7 @@ const Div = styled.div`
 	clip-path: polygon(49% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 `;
 function Img() {
-	return <FaAirbnb size="60px" />;
+	return <FaAirbnb size="60px" color="var(--secondary)" />;
 }
 
 // eslint-disable-next-line import/no-default-export

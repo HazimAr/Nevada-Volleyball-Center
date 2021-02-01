@@ -27,8 +27,8 @@ type a = {
 
 const headerStuff: a[] = [
 	{ title: "Home", link: "/#" },
-	{ title: "home", link: "/#" },
-	{ title: "home", link: "/#" },
+	{ title: "Something", link: "/#" },
+	{ title: "HAZIMOS", link: "/#" },
 	{ title: "Contact", link: "/#" },
 ];
 
@@ -36,7 +36,7 @@ const headerStuff: a[] = [
 export default function Main(): JSX.Element {
 	return (
 		<Header>
-			<h1>Elegant Themes</h1>
+			<h1>NVC</h1>
 			<StyledUl>
 				{headerStuff.map((data) => (
 					<StyledLink key={data.title}>

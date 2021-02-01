@@ -1,4 +1,3 @@
-import { Span } from "@styles/index.theme";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -58,12 +57,6 @@ export default function footer(): JSX.Element {
 			<Footer>
 				<FooterInside>
 					<StyledContact>
-						<Image
-							height={90}
-							width={270}
-							src="/Images/logo.png"
-							alt={`${COMPANY_NAME} Logo`}
-						/>
 						<p>
 							Here at Valley Construction Supply we believe that
 							the construction industry is a relationship business
@@ -97,13 +90,7 @@ export default function footer(): JSX.Element {
 				<a href="https://webdefy.tech">{COMPANY_NAME}</a> | All Rights
 				Reserved
 				<br />
-				Developed By{" "}
-				<a
-					style={{ color: "var(--secondary)" }}
-					href="https://webdefy.tech/"
-				>
-					Webdefyer
-				</a>
+				Developed By <a href="https://webdefy.tech/">Webdefyer</a>
 			</StyledCopyright>
 		</>
 	);
