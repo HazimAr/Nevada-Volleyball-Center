@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	return (
 		<>
 			<Head>
-				<title>Nevada Volleyball Center | Nik Schaefer</title>
+				<title>Nevada Volleyball Center</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
