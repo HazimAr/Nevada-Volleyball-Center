@@ -1,17 +1,19 @@
+import { Span } from "@styles/index.theme";
+import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
-import { COMPANY_NAME, COMPANY_EMAIL } from "../config";
+import { COMPANY_NAME } from "../config";
+import { headerStuff } from "./Header";
 
 const Footer = styled.footer`
 	background-color: var(--secondary);
-	color: var(--text-light);
+	color: rgba(255, 255, 255, 0.712); ;
 `;
 const FooterInside = styled.div`
 	width: 90%;
-	max-width: 1200px;
+	max-width: 800px;
 	padding: 5% 0;
 	margin: auto;
-
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -22,10 +24,12 @@ const FooterInside = styled.div`
 const StyledCopyright = styled.p`
 	margin: 0;
 	font-size: 14px;
-	padding: 20px 0;
-	color: var(--text-light);
+	padding: 20px 5%;
+	box-sizing: border-box;
 	font-size: 20px;
+	text-align: left;
 	background-color: var(--secondary);
+	color: white;
 	@media (max-width: 700px) {
 		font-size: 16px;
 	}
@@ -38,17 +42,36 @@ const StyledContact = styled.div`
 		text-align: center;
 	}
 `;
-const StyledLink = styled.a`
-	padding: 20px;
-	margin: 20px 0;
-`;
 const StyledList = styled.ul`
 	max-width: 320px;
 	text-align: left;
-	& h2 {
+	h2 {
 		font-size: 24px;
+		color: white;
+	}
+	li {
+		margin: 5px 0;
+		div svg {
+			transition: transform 0.3s ease;
+		}
+	}
+	li:hover {
+		color: #d3d3d3;
+		cursor: pointer;
+		div svg {
+			transform: rotate(90deg);
+		}
 	}
 `;
+
+function Arrow() {
+	return (
+		<div style={{ marginRight: "5px", display: "inline" }}>
+			<IoIosArrowForward />
+		</div>
+	);
+}
+
 // eslint-disable-next-line import/no-default-export
 export default function footer(): JSX.Element {
 	return (
@@ -57,39 +80,32 @@ export default function footer(): JSX.Element {
 				<FooterInside>
 					<StyledContact>
 						<p>
-							Here at Valley Construction Supply we believe that
-							the construction industry is a relationship business
-							and that our customers deserve personalized,
-							hands-on customer service that serves them beyond
-							their construction material needs.
+							Valley Construction Supply continually offers
+							promotions. Check out our promotions page for our
+							current specials
 						</p>
 					</StyledContact>
 					<StyledList>
 						<li>
-							<h2>Links</h2>
+							<h2>Quick Links</h2>
 						</li>
-						<li>Web Development</li>
-						<li>Database Infrastructure</li>
-						<li>SEO Services</li>
-						<li>Graphic Design</li>
-						<li>Hosting</li>
+						{headerStuff.map((data) => (
+							<a href={data.link} key={data.title}>
+								<li>
+									<Arrow />
+									{data.title}
+								</li>
+							</a>
+						))}
 					</StyledList>
-					<StyledContact>
-						<h2>Contact Us</h2>
-						<StyledLink href={`mailto:${COMPANY_EMAIL}`}>
-							{" "}
-							{COMPANY_EMAIL}
-							<br />
-						</StyledLink>
-					</StyledContact>
 				</FooterInside>
 			</Footer>
 			<StyledCopyright>
 				Copyright © 2021 |{" "}
-				<a href="https://webdefy.tech">{COMPANY_NAME}</a> | All Rights
-				Reserved
-				<br />
-				Developed By <a href="https://webdefy.tech/">Webdefyer</a>
+				<a href="https://webdefy.tech">
+					<Span>{COMPANY_NAME}</Span>
+				</a>{" "}
+				| All Rights Reserved
 			</StyledCopyright>
 		</>
 	);

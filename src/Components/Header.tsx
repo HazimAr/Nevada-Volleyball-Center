@@ -25,11 +25,11 @@ type a = {
 	link: string;
 };
 
-const headerStuff: a[] = [
+export const headerStuff: a[] = [
 	{ title: "Home", link: "/#" },
 	{ title: "Something", link: "/#" },
 	{ title: "HAZIMOS", link: "/#" },
-	{ title: "Contact", link: "/#" },
+	{ title: "Contact", link: "/contact" },
 ];
 
 // eslint-disable-next-line import/no-default-export

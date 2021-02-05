@@ -6,6 +6,7 @@ import {
 	FaWrench,
 	FaYoast,
 } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
 import { Button } from "./cards";
@@ -63,6 +64,13 @@ const StyledCard = styled.div`
 	p {
 		font-size: 20px;
 	}
+	button svg {
+		margin-left: 10px;
+		transition: transform ease-in-out 0.3s;
+	}
+	:hover button svg {
+		transform: translateX(10px);
+	}
 `;
 const CardContainer = styled.div`
 	display: flex;
@@ -115,7 +123,7 @@ function Card(Props: {
 			<p>{Props.text}</p>
 			<Link href={Props.link}>
 				<Button aria-label={`${Props.title} Article`}>
-					Learn more {"=>"}
+					Learn more <IoIosArrowForward />
 				</Button>
 			</Link>
 		</StyledCard>
@@ -137,7 +145,12 @@ export default function Promise(): JSX.Element {
 						construction material needs
 					</p>
 				</StyledTextDiv>
-				<Image alt="" src="/Images/IMG_7230.png" height={288} width={384} />
+				<Image
+					alt=""
+					src="/Images/IMG_7230.png"
+					height={288}
+					width={384}
+				/>
 			</div>
 			<CardContainer>
 				<Card
