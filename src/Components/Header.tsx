@@ -113,7 +113,7 @@ export function checkHeader(): void {
 }
 export const headerOptions = [
 	["Home", "/#"],
-	["Services", "/#services"],
+	["Services", "/services"],
 	["Portfolio", "/#portfolio"],
 	["Pricing", "/#pricing"],
 	["Contact", "/contact"],
