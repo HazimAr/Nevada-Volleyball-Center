@@ -1,21 +1,23 @@
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import styled from "styled-components";
 
-import IconMenu, { setHeader } from "./Menu";
+import { COMPANY_NAME } from '../config'
+import IconMenu, { setHeader } from "./menu";
 
 const StyledHeader = styled.header`
 	display: flex;
+	align-items:center;
 	width: 90%;
 	padding: 10px 5%;
-	z-index: 1000;
+	z-index: 2000;
+	background-color:white;
 `;
 const StyledDropHeader = styled(StyledHeader)`
-	display: none;
-	background-color: var(--primary);
+	background-color:white;
 	position: fixed;
+	top:-300px;
 	padding: 10px 5%;
-	z-index: 20;
+	z-index: 4000;
 	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
 `;
 const StyledLinkContainer = styled.ul`
@@ -60,11 +62,6 @@ const StyledLink = styled.li`
 		width: 100%;
 	}
 `;
-const StyledImage = styled(Image)`
-	&:hover {
-		cursor: pointer;
-	}
-`;
 const StyledMenuContainer = styled.div`
 	display: none;
 	height: 100vh;
@@ -106,7 +103,6 @@ export function checkHeader(): void {
 	}
 	if (window.scrollY > 50) {
 		header.style.animation = "headerComeIn 1s forwards";
-		header.style.display = "flex";
 	} else {
 		header.style.animation = "headerComeOut 1s forwards";
 	}
@@ -114,23 +110,7 @@ export function checkHeader(): void {
 export const headerOptions = [
 	["Home", "/#"],
 	["Services", "/services"],
-	["Portfolio", "/#portfolio"],
-	["Pricing", "/#pricing"],
 	["Contact", "/contact"],
-];
-
-type Color = {
-	name: string;
-	light: string;
-	dark: string;
-};
-
-const colors: Color[] = [
-	{ name: "secondary", light: "#f8f8f8", dark: "#202d3d" },
-	{ name: "text", light: "#151515", dark: "#ffffff" },
-	{ name: "gray", light: "#575757", dark: "#ffffff" },
-	{ name: "accent", light: "#f8f9fd", dark: "#253648" },
-	{ name: "primary", light: "#ffffff", dark: "#202d3d" },
 ];
 
 // eslint-disable-next-line import/no-default-export
@@ -146,12 +126,7 @@ export default function Header(): JSX.Element {
 			<>
 				{/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
 				<a href="/#" aria-label="Company Logo">
-					<StyledImage
-						height={50}
-						width={150}
-						src="/Images/LogoDark.png"
-						alt="Company Logo"
-					/>
+					<h2>{COMPANY_NAME}</h2>
 				</a>
 				<StyledLinkContainer>
 					{headerOptions.map((temp, i) => (
@@ -164,7 +139,6 @@ export default function Header(): JSX.Element {
 			</>
 		);
 	}
-
 	return (
 		<>
 			<StyledMenuContainer

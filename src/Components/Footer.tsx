@@ -1,5 +1,4 @@
 import { Span } from "@styles/index.theme";
-import Image from "next/image";
 import { FaFacebook, FaHeart, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
@@ -103,31 +102,9 @@ export default function footer(): JSX.Element {
 			<Footer>
 				<FooterInside>
 					<StyledContact>
-						<Image
-							height={90}
-							width={270}
-							src="/Images/LogoDark.png"
-							alt={`${COMPANY_NAME} Logo`}
-						/>
+						<h1>{COMPANY_NAME}</h1>
 						<p>
-							{" "}
-							We provide 100% custom coded websites with superior
-							search engine optimized results
-							<br />
-							<span style={{ fontSize: "12px" }}>
-								<a
-									href="https://iconscout.com/illustration-pack/website-landing-page"
-									rel="noreferrer"
-									target="_blank"
-								>
-									Website Landing Page Illustration
-								</a>{" "}
-								by{" "}
-								<a href="https://iconscout.com/contributors/woobrodesign" rel="noreferrer"
-									target="_blank">
-									WOOBRO DESIGN
-								</a>
-							</span>
+							Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials
 						</p>
 						<StyledSocials>
 							<a href={COMPANY_SOCIALS.linkedin}  target="_blank" rel="noreferrer">
@@ -171,7 +148,7 @@ export default function footer(): JSX.Element {
 				Copyright © 2021{" "}
 				<a href="https://webdefy.tech">
 					Designed with <FaHeart color="red" /> by
-					<Span> {COMPANY_NAME}</Span>
+					<Span> Webdefyer</Span>
 				</a>{" "}
 			</StyledCopyright>
 		</>

@@ -44,3 +44,35 @@ h3 {
 * {
 	z-index: inherit;
 }
+
+@keyframes dropin {
+	to {
+		right: 0;
+	}
+}
+
+@keyframes dropout {
+	from {
+		right: 0;
+	}
+	to {
+		right: -100vw;
+	}
+}
+@keyframes headerComeOut {
+	from {
+		top: 0;
+	}
+	to {
+		top: -300px;
+	}
+}
+
+@keyframes headerComeIn {
+	from {
+		top: -300px;
+	}
+	to {
+		top: 0;
+	}
+}
