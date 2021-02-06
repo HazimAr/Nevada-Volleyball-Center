@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { BsMoon } from "react-icons/bs";
-import { FiSun } from "react-icons/fi";
 import styled from "styled-components";
 
-import IconMenu, { setHeader } from "./menu";
+import IconMenu, { setHeader } from "./Menu";
 
 const StyledHeader = styled.header`
 	display: flex;

@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
 import { COMPANY_NAME, COMPANY_SOCIALS } from "../config";
-import { headerOptions } from "./header";
+import { headerOptions } from "./Header";
 
 const Footer = styled.footer`
 	background-color: #233446;
