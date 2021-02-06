@@ -1,17 +1,19 @@
 import { Span } from "@styles/index.theme";
+import Image from "next/image";
+import { FaFacebook, FaHeart, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
-import { COMPANY_NAME } from "../config";
-import { headerStuff } from "./Header";
+import { COMPANY_NAME, COMPANY_SOCIALS } from "../config";
+import { headerOptions } from "./header";
 
 const Footer = styled.footer`
-	background-color: var(--secondary);
-	color: rgba(255, 255, 255, 0.712); ;
+	background-color: #233446;
+	color: rgba(223, 223, 223, 0.712); ;
 `;
 const FooterInside = styled.div`
 	width: 90%;
-	max-width: 800px;
+	max-width: 1000px;
 	padding: 5% 0;
 	margin: auto;
 	display: flex;
@@ -23,13 +25,14 @@ const FooterInside = styled.div`
 `;
 const StyledCopyright = styled.p`
 	margin: 0;
+	border-top: #2c4258 solid 0.5px;
 	font-size: 14px;
 	padding: 20px 5%;
 	box-sizing: border-box;
 	font-size: 20px;
 	text-align: left;
-	background-color: var(--secondary);
-	color: white;
+	background-color: #233446;
+	color: rgba(223, 223, 223, 0.712);
 	@media (max-width: 700px) {
 		font-size: 16px;
 	}
@@ -64,6 +67,14 @@ const StyledList = styled.ul`
 	}
 `;
 
+const services = [
+	"Web Development",
+	"Database Infastructure",
+	"SEO Services",
+	"Graphic Design",
+	"Software Development",
+];
+
 function Arrow() {
 	return (
 		<div style={{ marginRight: "5px", display: "inline" }}>
@@ -71,7 +82,20 @@ function Arrow() {
 		</div>
 	);
 }
-
+const StyledSocials = styled.div`
+	display: flex;
+	width: 120px;
+	justify-content: space-evenly;
+	a svg {
+		color: var(--highlight);
+	}
+	a:hover {
+		svg {
+			color: var(--hover);
+		}
+	}
+`;
+const size = "30px";
 // eslint-disable-next-line import/no-default-export
 export default function footer(): JSX.Element {
 	return (
@@ -79,21 +103,64 @@ export default function footer(): JSX.Element {
 			<Footer>
 				<FooterInside>
 					<StyledContact>
+						<Image
+							height={90}
+							width={270}
+							src="/Images/LogoDark.png"
+							alt={`${COMPANY_NAME} Logo`}
+						/>
 						<p>
-							Valley Construction Supply continually offers
-							promotions. Check out our promotions page for our
-							current specials
+							{" "}
+							We provide 100% custom coded websites with superior
+							search engine optimized results
+							<br />
+							<span style={{ fontSize: "12px" }}>
+								<a
+									href="https://iconscout.com/illustration-pack/website-landing-page"
+									rel="noreferrer"
+									target="_blank"
+								>
+									Website Landing Page Illustration
+								</a>{" "}
+								by{" "}
+								<a href="https://iconscout.com/contributors/woobrodesign" rel="noreferrer"
+									target="_blank">
+									WOOBRO DESIGN
+								</a>
+							</span>
 						</p>
+						<StyledSocials>
+							<a href={COMPANY_SOCIALS.linkedin}  target="_blank" rel="noreferrer">
+								<FaLinkedin size={size} />
+							</a>
+							<a href={COMPANY_SOCIALS.facebook}  target="_blank" rel="noreferrer">
+								<FaFacebook size={size} />
+							</a>
+							<a href={COMPANY_SOCIALS.instagram} target="_blank" rel="noreferrer">
+								<FaInstagram size={size} />
+							</a>
+						</StyledSocials>
 					</StyledContact>
+					<StyledList>
+						<li>
+							<h2>Services</h2>
+						</li>
+						{services.map((data) => (
+							<li key={data}>
+								<Arrow />
+								{data}
+							</li>
+						))}
+					</StyledList>
 					<StyledList>
 						<li>
 							<h2>Quick Links</h2>
 						</li>
-						{headerStuff.map((data) => (
-							<a href={data.link} key={data.title}>
+						{headerOptions.map((data) => (
+							<a href={data[1]} key={data[0]}>
 								<li>
 									<Arrow />
-									{data.title}
+									{data[0]}
 								</li>
 							</a>
 						))}
@@ -101,11 +168,11 @@ export default function footer(): JSX.Element {
 				</FooterInside>
 			</Footer>
 			<StyledCopyright>
-				Copyright © 2021 |{" "}
+				Copyright © 2021{" "}
 				<a href="https://webdefy.tech">
-					<Span>{COMPANY_NAME}</Span>
+					Designed with <FaHeart color="red" /> by
+					<Span> {COMPANY_NAME}</Span>
 				</a>{" "}
-				| All Rights Reserved
 			</StyledCopyright>
 		</>
 	);

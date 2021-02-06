@@ -9,7 +9,15 @@ const COMPANY_EMAIL = "nevadavolleyballcenter@gmail.com";
 const EMAIL_LIST =
 	"nikkschaefer@gmail.com, hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
 
+
+const COMPANY_SOCIALS = {
+	instagram: "https://www.instagram.com/webdefyer/",
+	facebook: "https://www.facebook.com/WebDefyer-107501398041284",
+	linkedin: "https://www.linkedin.com/company/webdefyer",
+};
+
 export {
+	COMPANY_SOCIALS,
 	GA_TRACKING_ID,
 	IS_PRODUCTION,
 	IS_TEST,
