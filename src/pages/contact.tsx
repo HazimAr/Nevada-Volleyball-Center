@@ -1,83 +1,142 @@
+import { Span, StyledButton } from "@styles/index.theme";
+import axios from "axios";
+import { COMPANY_EMAIL } from "config";
+import Image from "next/image";
 import { useState } from "react";
+import { FaMailBulk } from "react-icons/fa";
 import styled from "styled-components";
 
-const Container = styled.main`
+const StyledOutside = styled.div`
 	padding: 100px 0;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 `;
-
-const Form = styled.form`
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    border:black;
-    padding:20px;
+const Input = styled.input`
+	box-sizing: border-box;
+`;
+const Textarea = styled.textarea`
+	resize: vertical;
+	min-height: 50px;
+	max-height: 300px;
+`;
+const StyledForm = styled.form`
+	width: 90%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	border-radius: 10px;
 	input,
 	textarea {
-		border: black solid 1px;
-        padding:10px;
-        margin:10px;
-        border-radius: 5px;
-        width:300px;
+		background-color: var(--contact);
+		color: white;
+		padding: 13px;
+		border-radius: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 20px 0;
 	}
+`;
+const StyledTitle = styled.h2`
+	font-size: 32px;
+	font-weight: 500;
+	font-family: var(--font-title);
+`;
+const StyledDivs = styled.div`
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `;
 
 // eslint-disable-next-line import/no-default-export
 export default function Contact(): JSX.Element {
-	const [name, setname] = useState("");
-	const [email, setemail] = useState("");
-	const [phone, setphone] = useState("");
-	const [subjecet, setsubjecet] = useState("");
-	const [message, setmessage] = useState("");
-	return (
-		<Container>
-			<h1>| Contact Nevada Volleyball Center</h1>
+	const [name, setName] = useState("");
+	const [phone, setPhone] = useState("");
+	const [email, setEmail] = useState("");
+	const [subject, setSubject] = useState("");
+	const [message, setMessage] = useState("");
 
-			<Form>
-				<h2>Drop us A line</h2>
-				<input
-					placeholder="Your name"
+	function handleSubmit() {
+		// eslint-disable-next-line no-void
+		void axios.post("/api/email", {
+			name,
+			phone,
+			email,
+			subject,
+			message,
+		});
+	}
+
+	return (
+		<StyledOutside id="contact">
+			<StyledForm onSubmit={handleSubmit}>
+				<StyledTitle>
+					Tell Us About Your <Span>Project</Span>
+				</StyledTitle>
+				<Input
+					aria-label="Name"
 					value={name}
 					onChange={(e) => {
-						setname(e.target.value);
+						setName(e.target.value);
 					}}
-					aria-label="Your Name"
 					type="text"
+					placeholder="Name *"
 				/>
-				<input
-					placeholder="Your Email"
-					value={email}
-					onChange={(e) => {
-						setemail(e.target.value);
-					}}
-					aria-label="Email Address"
-				/>
-				<input
-					placeholder="Your Phone"
+				<Input
+					aria-label="Phone Number"
 					value={phone}
 					onChange={(e) => {
-						setphone(e.target.value);
+						setPhone(e.target.value);
 					}}
-					aria-label="Phone Number"
-					type="Text"
+					type="tel"
+					className="input"
+					placeholder="Phone *"
 				/>
-				<input
-					placeholder="Subject"
-					value={subjecet}
+				<Input
+					aria-label="email"
+					value={email}
 					onChange={(e) => {
-						setsubjecet(e.target.value);
+						setEmail(e.target.value);
 					}}
-					aria-label="Subject"
+					type="email"
+					placeholder="Email *"
 				/>
-				<textarea
-					placeholder="Message"
+				<Input
+					aria-label="Subject"
+					value={subject}
+					onChange={(e) => {
+						setSubject(e.target.value);
+					}}
+					type="text"
+					placeholder="Subject *"
+				/>
+				<Textarea
+					aria-label="Message"
 					value={message}
 					onChange={(e) => {
-						setmessage(e.target.value);
+						setMessage(e.target.value);
 					}}
-					aria-label="Message"
+					className="input"
+					placeholder="Message *"
 				/>
-			</Form>
-		</Container>
+				<StyledButton aria-label="Submit">Submit</StyledButton>
+			</StyledForm>
+			<StyledDivs>
+				<FaMailBulk color="var(--highlight)" size="70px" />
+				<h3>{COMPANY_EMAIL}</h3>
+				<FaMailBulk color="var(--highlight)" size="70px" />
+				<h3>{COMPANY_EMAIL}</h3>
+				<Image
+					alt=""
+					layout="intrinsic"
+					src="/pack/contact.svg"
+					width={600}
+					height={500}
+				/>
+			</StyledDivs>
+		</StyledOutside>
 	);
 }

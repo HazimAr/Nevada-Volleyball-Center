@@ -5,7 +5,7 @@ const IS_TEST = process.env.NODE_ENV === "test";
 const IS_BROWSER = typeof window !== "undefined";
 
 const COMPANY_NAME = "Nevada Volleyball Center";
-const COMPANY_EMAIL = "info@nevadavolleyballcenter.com";
+const COMPANY_EMAIL = "nevadavolleyballcenter@gmail.com";
 const EMAIL_LIST =
 	"nikkschaefer@gmail.com, hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
 
