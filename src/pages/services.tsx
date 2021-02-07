@@ -1,6 +1,5 @@
 import { Span, StyledButton } from "@styles/index.theme";
 import axios from "axios";
-import { COMPANY_EMAIL } from "config";
 import Image from "next/image";
 import { useState } from "react";
 import { FaMailBulk } from "react-icons/fa";
@@ -125,10 +124,6 @@ export default function Contact(): JSX.Element {
 				<StyledButton aria-label="Submit">Submit</StyledButton>
 			</StyledForm>
 			<StyledDivs>
-				<FaMailBulk color="var(--highlight)" size="70px" />
-				<h3>{COMPANY_EMAIL}</h3>
-				<FaMailBulk color="var(--highlight)" size="70px" />
-				<h3>{COMPANY_EMAIL}</h3>
 				<Image
 					alt=""
 					layout="intrinsic"
