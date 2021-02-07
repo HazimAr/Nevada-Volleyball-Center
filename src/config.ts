@@ -11,11 +11,6 @@ const COMPANY_INFO = {
 	address1: "3778 W. Cheyenne Ave STE 120, ",
 	address2: "N. Las Vegas, NV 8903",
 };
-const COMPANY_NAME = "Nevada Volleyball Center";
-const COMPANY_EMAIL = "NevadaVolleyballCenter@gmail.com";
-const COMPANY_PHONE = "702-666-6666";
-const COMPANY_ADDRESS1 = "3778 W. Cheyenne Ave STE 120, ";
-const COMPANY_ADDRESS2 = "N. Las Vegas, NV 8903";
 const EMAIL_LIST =
 	"hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
 
