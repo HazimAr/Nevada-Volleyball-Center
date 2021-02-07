@@ -1,3 +1,4 @@
+import { Span } from "@styles/index.theme";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -60,6 +61,7 @@ const StyledCard = styled.div`
 	h2 {
 		text-transform: uppercase;
 		margin-bottom: 0;
+		font-weight: 600;
 	}
 	p {
 		font-size: 20px;
@@ -136,7 +138,9 @@ export default function Promise(): JSX.Element {
 		<Section>
 			<div>
 				<StyledTextDiv>
-					<h1>FOR HAZIMOS!</h1>
+					<h1>
+						<Span>FOR</Span> HAZIMOS!
+					</h1>
 					<p>
 						Here at Valley Construction Supply we believe that the
 						construction industry is a relationship business and
@@ -156,25 +160,25 @@ export default function Promise(): JSX.Element {
 				<Card
 					link="/"
 					Image={Img}
-					title="for hazimos"
+					title="PROMOTIONS AND SPECIALS"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
 					Image={Img2}
-					title="for hazimos"
+					title="ACCURATE TAKE-OFFS"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
 					Image={Img3}
-					title="for hazimos"
+					title="ACCURATE TAKE-OFFS"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
 					Image={Img4}
-					title="for hazimos"
+					title="PROMOTIONS AND SPECIALS"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 			</CardContainer>

@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import styled from "styled-components";
 
-import { COMPANY_NAME } from "../config";
+import { COMPANY_INFO } from "../config";
 import IconMenu, { setHeader } from "./menu";
 
 const StyledHeader = styled.header`
 	display: flex;
 	align-items: center;
 	width: 90%;
-	padding: 10px 5%;
+	padding: 0px 5%;
 	z-index: 2000;
 	background-color: white;
 `;
@@ -16,14 +16,13 @@ const StyledDropHeader = styled(StyledHeader)`
 	background-color: white;
 	position: fixed;
 	top: -300px;
-	padding: 10px 5%;
 	z-index: 4000;
 	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
 `;
 const StyledLinkContainer = styled.ul`
 	display: flex;
 	width: 60%;
-	max-width: 700px;
+	max-width: 300px;
 	margin-left: auto;
 	font-size: 25px;
 	@media (max-width: 800px) {
@@ -39,27 +38,9 @@ const StyledLinkContainer = styled.ul`
 const StyledLink = styled.li`
 	margin: 10px auto;
 	position: relative;
-	transition: all ease-in-out 0.3s;
 	&:hover {
 		cursor: pointer;
-		color: var(--highlight);
-	}
-	&::before {
-		content: "";
-		position: absolute;
-		border-width: 1px;
-		width: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		height: 2px;
-		bottom: 1px;
-		background-color: var(--highlight);
-		visibility: hidden;
-		transition: all 0.2s ease-in-out;
-	}
-	&:hover::before {
-		visibility: visible;
-		width: 100%;
+		color: var(--secondary);
 	}
 `;
 const StyledMenuContainer = styled.div`
@@ -126,7 +107,7 @@ export default function Header(): JSX.Element {
 			<>
 				{/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
 				<a href="/#" aria-label="Company Logo">
-					<h2>{COMPANY_NAME}</h2>
+					<h2>{COMPANY_INFO.name}</h2>
 				</a>
 				<StyledLinkContainer>
 					{headerOptions.map((temp, i) => (

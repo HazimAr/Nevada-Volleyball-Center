@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { COMPANY_NAME } from "../../config";
+import { COMPANY_INFO } from "../../config";
 
 const Container = styled.section`
 	min-height: 600px;
@@ -31,6 +31,9 @@ const StyledText = styled.div`
 	max-width: 1200px;
 	text-align: left;
 	font-size: 20px;
+	p {
+		color:inherit;
+	}
 `;
 const StyledH1 = styled.h1`
 	font-size: 60px;
@@ -47,7 +50,7 @@ export default function Intro(): JSX.Element {
 				<Inside>
 					<StyledText id="intro__text">
 						<StyledH1>
-							{COMPANY_NAME} <br />
+							{COMPANY_INFO.name} <br />
 						</StyledH1>
 						<p>
 							We provide 100% custom coded websites with superior

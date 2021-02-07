@@ -1,11 +1,12 @@
 import { Span, StyledButton } from "@styles/index.theme";
 import axios from "axios";
-import { COMPANY_EMAIL, COMPANY_PHONE, COMPANY_ADDRESS } from "config";
 import Image from "next/image";
 import { useState } from "react";
-import { FaMailBulk, FaMobile } from "react-icons/fa";
 import { BsHouseFill } from "react-icons/bs";
+import { FaMailBulk, FaMobile } from "react-icons/fa";
 import styled from "styled-components";
+
+import { COMPANY_INFO } from "../config";
 
 const StyledOutside = styled.div`
 	padding: 100px 0;
@@ -28,14 +29,15 @@ const StyledForm = styled.form`
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	border-radius: 10px;
+	border-radius: 15px;
 	input,
 	textarea {
 		background-color: var(--contact);
-		color: white;
+		color: var(--text);
 		padding: 13px;
 		border-radius: 5px;
 		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
 		margin: 20px 0;
 	}
 `;
@@ -52,7 +54,7 @@ const StyledDivs = styled.div`
 `;
 const ContactInfoDiv = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 	div {
@@ -137,15 +139,37 @@ export default function Contact(): JSX.Element {
 				<ContactInfoDiv>
 					<div>
 						<FaMailBulk color="var(--secondary)" size="70px" />
-						<h3>{COMPANY_EMAIL}</h3>
+						<a
+							href={`mailto:${COMPANY_INFO.email}`}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<h3>{COMPANY_INFO.email}</h3>
+						</a>
 					</div>
 					<div>
 						<FaMobile color="var(--secondary)" size="70px" />
-						<h3>{COMPANY_PHONE}</h3>
+						<a
+							href={`tel:+1${COMPANY_INFO.phone}`}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<h3>{COMPANY_INFO.phone}</h3>
+						</a>
 					</div>
 					<div>
 						<BsHouseFill color="var(--secondary)" size="70px" />
-						<h3>{COMPANY_ADDRESS}</h3>
+						<a
+							href="https://www.google.com/maps/place/3778+W+Cheyenne+Ave+STE+120,+North+Las+Vegas,+NV+89032/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<h3>
+								{COMPANY_INFO.address1}
+								<br />
+								{COMPANY_INFO.address2}
+							</h3>
+						</a>
 					</div>
 				</ContactInfoDiv>
 				<Image

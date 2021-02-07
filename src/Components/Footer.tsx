@@ -3,17 +3,11 @@ import { FaFacebook, FaHeart, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
-import {
-	COMPANY_NAME,
-	COMPANY_SOCIALS,
-	COMPANY_EMAIL,
-	COMPANY_PHONE,
-	COMPANY_ADDRESS,
-} from "../config";
+import { COMPANY_INFO, COMPANY_SOCIALS } from "../config";
 import { headerOptions } from "./Header";
 
 const Footer = styled.footer`
-	background-color: #233446;
+	background-color: #262f3a;
 	color: rgba(223, 223, 223, 0.712); ;
 `;
 const FooterInside = styled.div`
@@ -36,7 +30,7 @@ const StyledCopyright = styled.p`
 	box-sizing: border-box;
 	font-size: 20px;
 	text-align: left;
-	background-color: #233446;
+	background-color: #262f3a;
 	color: rgba(223, 223, 223, 0.712);
 	@media (max-width: 700px) {
 		font-size: 16px;
@@ -49,9 +43,12 @@ const StyledContact = styled.div`
 		font-size: 24px;
 		text-align: center;
 	}
+	p {
+		color: inherit;
+	}
 `;
 const StyledList = styled.ul`
-	max-width: 320px;
+	max-width: 300px;
 	text-align: left;
 	h2 {
 		font-size: 24px;
@@ -100,7 +97,7 @@ export default function footer(): JSX.Element {
 			<Footer>
 				<FooterInside>
 					<StyledContact>
-						<h1>{COMPANY_NAME}</h1>
+						<h1>{COMPANY_INFO.name}</h1>
 						<p>
 							Valley Construction Supply continually offers
 							promotions. Check out our promotions page for our
@@ -148,33 +145,36 @@ export default function footer(): JSX.Element {
 							<h2>Contact </h2>
 						</li>
 						<a
-							href={`mailto:${COMPANY_EMAIL}`}
+							href={`mailto:${COMPANY_INFO.email}`}
 							target="_blank"
 							rel="noreferrer"
 						>
 							<li>
 								<Arrow />
-								{COMPANY_EMAIL}
+								{COMPANY_INFO.email}
 							</li>
 						</a>
 						<a
-							href={`tel:+1${COMPANY_PHONE}`}
+							href={`tel:+1${COMPANY_INFO.phone}`}
 							target="_blank"
 							rel="noreferrer"
 						>
 							<li>
 								<Arrow />
-								{COMPANY_PHONE}
+								{COMPANY_INFO.phone}
 							</li>
 						</a>
 						<a
-							href="https://www.google.com/maps/place/3778+W+Cheyenne+Ave+STE+120,+N,+North+Las+Vegas,+NV+89032/"
+							href="https://www.google.com/maps/place/3778+W+Cheyenne+Ave+STE+120,+North+Las+Vegas,+NV+89032/"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<li>
 								<Arrow />
-								{COMPANY_ADDRESS}
+								{COMPANY_INFO.address1}
+								<br />
+								<Arrow />
+								{COMPANY_INFO.address2}
 							</li>
 						</a>
 					</StyledList>

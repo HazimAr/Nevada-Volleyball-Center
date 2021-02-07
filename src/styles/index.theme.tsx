@@ -16,6 +16,6 @@ const StyledButton = styled.button`
 	}
 `;
 const Span = styled.span`
-	color: var(--highlight);
+	color: var(--secondary);
 `;
 export { StyledButton, Span };

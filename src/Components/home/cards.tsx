@@ -9,6 +9,7 @@ const Container = styled.section`
 	justify-content: center;
 	padding: 50px 0;
 	z-index: 1000;
+	position: relative;
 `;
 
 const StyledCard = styled.div`
@@ -16,16 +17,19 @@ const StyledCard = styled.div`
 	margin: 20px;
 	height: 400px;
 	padding: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 100px;
 	background-color: #f6f7f9;
-	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 85%);
-
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 83%);
 	&:nth-child(3) {
 		clip-path: polygon(100% 0, 100% 83%, 53% 92%, 0 85%, 0 0);
 	}
 	&:nth-child(2) {
-		padding-bottom: 60px;
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%);
+	}
+	h2 {
+		font-size: 20px;
+		margin-bottom: 40px;
 	}
 `;
 export const Button = styled.button`
@@ -38,6 +42,14 @@ export const Button = styled.button`
 		cursor: pointer;
 	}
 `;
+const HighLight = styled.div`
+	border-top: solid var(--secondary) 5px;
+	position: absolute;
+	top: -0px;
+	width: 60%;
+	left:50%;
+	transform: translateX(-50%);
+`
 function Card(props: {
 	// eslint-disable-next-line react/no-unused-prop-types
 	Image: Function;
@@ -47,6 +59,7 @@ function Card(props: {
 }): JSX.Element {
 	return (
 		<StyledCard>
+			<HighLight />
 			<props.Image />
 			<h2>{props.title}</h2>
 			<p>{props.description}</p>
