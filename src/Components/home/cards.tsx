@@ -47,9 +47,9 @@ const HighLight = styled.div`
 	position: absolute;
 	top: -0px;
 	width: 60%;
-	left:50%;
+	left: 50%;
 	transform: translateX(-50%);
-`
+`;
 function Card(props: {
 	// eslint-disable-next-line react/no-unused-prop-types
 	Image: Function;

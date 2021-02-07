@@ -32,7 +32,7 @@ const StyledText = styled.div`
 	text-align: left;
 	font-size: 20px;
 	p {
-		color:inherit;
+		color: inherit;
 	}
 `;
 const StyledH1 = styled.h1`
