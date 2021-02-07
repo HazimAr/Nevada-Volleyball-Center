@@ -66,7 +66,7 @@ export function setHeader(bool: boolean): void {
 	}
 }
 // eslint-disable-next-line import/no-default-export
-export default function Menu(): JSX.Element {
+export default function IconMenu(): JSX.Element {
 	const [isAnimated, setIsAnimated] = useState(false);
 	return (
 		<StyledButton
