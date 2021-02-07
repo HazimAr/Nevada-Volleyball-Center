@@ -58,7 +58,6 @@ function setHeader(bool: boolean): void {
 	const time = "0.3s";
 	if (bool && ele !== null) {
 		ele.style.animation = `dropin ${time} forwards`;
-	} else if (ele !== null) {
 		ele.style.animation = `dropout ${time} forwards`;
 		if (menus !== null) {
 			// eslint-disable-next-line @typescript-eslint/prefer-for-of

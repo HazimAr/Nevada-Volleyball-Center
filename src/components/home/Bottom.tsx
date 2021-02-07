@@ -10,7 +10,7 @@ import {
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
-import { Button } from "./cards";
+import { Button } from "./IntroCards";
 
 const Section = styled.section`
 	box-sizing: border-box;

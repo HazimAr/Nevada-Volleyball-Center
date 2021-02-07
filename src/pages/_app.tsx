@@ -5,8 +5,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../components/foot";
+import Header from "../components/head";
 
 // eslint-disable-next-line import/no-default-export
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
