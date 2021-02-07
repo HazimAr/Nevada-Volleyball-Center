@@ -82,3 +82,4 @@ export default function IconMenu(): JSX.Element {
 		</StyledButton>
 	);
 }
+
