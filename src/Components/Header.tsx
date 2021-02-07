@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styled from "styled-components";
 
 import { COMPANY_INFO } from "../config";
-import IconMenu, { setHeader } from "./menu";
+import IconMenu, { setHeader } from "./Menu";
 
 const StyledHeader = styled.header`
 	display: flex;
