@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styled from "styled-components";
 
 import { COMPANY_INFO } from "../config";
-import IconMenu, { setHeader } from "./Menu";
+
 
 const StyledHeader = styled.header`
 	display: flex;
@@ -116,37 +116,11 @@ export default function Header(): JSX.Element {
 						</StyledLink>
 					))}
 				</StyledLinkContainer>
-				<IconMenu />
 			</>
 		);
 	}
 	return (
 		<>
-			<StyledMenuContainer
-				aria-label="Dropdown Mobile Menu"
-				id="drop-menu"
-			>
-				<DeselectMenu
-					aria-label="Deselect Menu"
-					onClick={() => {
-						setHeader(false);
-					}}
-				/>
-				<StyledMenuList>
-					{headerOptions.map((temp) => (
-						<StyledLink key={`menu-${temp[0]}`}>
-							<a
-								onClick={() => {
-									setHeader(false);
-								}}
-								href={temp[1]}
-							>
-								{temp[0]}
-							</a>
-						</StyledLink>
-					))}
-				</StyledMenuList>
-			</StyledMenuContainer>
 			<StyledHeader>
 				<HeaderContent />
 			</StyledHeader>
