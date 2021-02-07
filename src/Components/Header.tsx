@@ -43,39 +43,6 @@ const StyledLink = styled.li`
 		color: var(--secondary);
 	}
 `;
-const StyledMenuContainer = styled.div`
-	display: none;
-	height: 100vh;
-	width: 60vw;
-	position: fixed;
-	right: -100vw;
-	top: 0;
-	z-index: 100;
-	background-color: var(--secondary);
-	@media (max-width: 800px) {
-		display: block;
-	}
-`;
-const DeselectMenu = styled.button`
-	height: 100vh;
-	left: -40vw;
-	top: 0;
-	width: 40vw;
-	position: absolute;
-`;
-const StyledMenuList = styled.ul`
-	display: flex;
-	flex-direction: column;
-	height: 60%;
-	justify-content: center;
-	& li {
-		font-size: 20px;
-		line-height: 18px;
-		padding: 15px 0;
-		text-align: left;
-		margin: 0;
-	}
-`;
 
 export function checkHeader(): void {
 	const header: HTMLElement | null = document.querySelector("#drop-header");
