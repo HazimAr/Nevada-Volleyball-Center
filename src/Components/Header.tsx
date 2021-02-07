@@ -1,7 +1,7 @@
 import { useEffect , useState} from "react";
 import styled from "styled-components";
 
-import { COMPANY_INFO } from "../config";
+import { COMPANY_INFO, headerOptions } from "../config";
 
 
 const width = "40px";
@@ -171,11 +171,6 @@ export function checkHeader(): void {
 		header.style.animation = "headerComeOut 1s forwards";
 	}
 }
-export const headerOptions = [
-	["Home", "/#"],
-	["Services", "/services"],
-	["Contact", "/contact"],
-];
 
 // eslint-disable-next-line import/no-default-export
 export default function Header(): JSX.Element {

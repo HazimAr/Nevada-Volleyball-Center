@@ -19,6 +19,11 @@ const COMPANY_SOCIALS = {
 	facebook: "https://www.facebook.com/WebDefyer-107501398041284",
 	linkedin: "https://www.linkedin.com/company/webdefyer",
 };
+export const headerOptions = [
+	["Home", "/#"],
+	["Services", "/services"],
+	["Contact", "/contact"],
+];
 
 export {
 	COMPANY_SOCIALS,

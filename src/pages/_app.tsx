@@ -1,11 +1,12 @@
 import "@styles/global.css";
-import Footer from "@components/footer";
-import Header from "@components/header";
+import Header from "@components/Header";
 import { pageview } from "@lib/gtag";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+
+import Footer from "../components/Footer";
 
 // eslint-disable-next-line import/no-default-export
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {

@@ -3,8 +3,7 @@ import { FaFacebook, FaHeart, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
-import { COMPANY_INFO, COMPANY_SOCIALS } from "../config";
-import { headerOptions } from "./Header";
+import { COMPANY_INFO, COMPANY_SOCIALS, headerOptions } from "../config";
 
 const Footer = styled.footer`
 	background-color: #262f3a;
