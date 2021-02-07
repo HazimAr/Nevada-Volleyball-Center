@@ -1,21 +1,21 @@
 import { useEffect } from "react";
 import styled from "styled-components";
 
-import { COMPANY_NAME } from '../config'
+import { COMPANY_NAME } from "../config";
 import IconMenu, { setHeader } from "./menu";
 
 const StyledHeader = styled.header`
 	display: flex;
-	align-items:center;
+	align-items: center;
 	width: 90%;
 	padding: 10px 5%;
 	z-index: 2000;
-	background-color:white;
+	background-color: white;
 `;
 const StyledDropHeader = styled(StyledHeader)`
-	background-color:white;
+	background-color: white;
 	position: fixed;
-	top:-300px;
+	top: -300px;
 	padding: 10px 5%;
 	z-index: 4000;
 	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);

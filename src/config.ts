@@ -6,9 +6,10 @@ const IS_BROWSER = typeof window !== "undefined";
 
 const COMPANY_NAME = "Nevada Volleyball Center";
 const COMPANY_EMAIL = "nevadavolleyballcenter@gmail.com";
+const COMPANY_PHONE = "702-666-6666";
+const COMPANY_ADDRESS = "3778 W. Cheyenne Ave STE 120, N. Las Vegas, NV 8903";
 const EMAIL_LIST =
-	"nikkschaefer@gmail.com, hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
-
+	"hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
 
 const COMPANY_SOCIALS = {
 	instagram: "https://www.instagram.com/webdefyer/",
@@ -24,5 +25,7 @@ export {
 	IS_BROWSER,
 	COMPANY_NAME,
 	COMPANY_EMAIL,
+	COMPANY_PHONE,
+	COMPANY_ADDRESS,
 	EMAIL_LIST,
 };

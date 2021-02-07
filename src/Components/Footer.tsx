@@ -3,7 +3,13 @@ import { FaFacebook, FaHeart, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
-import { COMPANY_NAME, COMPANY_SOCIALS } from "../config";
+import {
+	COMPANY_NAME,
+	COMPANY_SOCIALS,
+	COMPANY_EMAIL,
+	COMPANY_PHONE,
+	COMPANY_ADDRESS,
+} from "../config";
 import { headerOptions } from "./Header";
 
 const Footer = styled.footer`
@@ -66,14 +72,6 @@ const StyledList = styled.ul`
 	}
 `;
 
-const services = [
-	"Web Development",
-	"Database Infastructure",
-	"SEO Services",
-	"Graphic Design",
-	"Software Development",
-];
-
 function Arrow() {
 	return (
 		<div style={{ marginRight: "5px", display: "inline" }}>
@@ -104,31 +102,34 @@ export default function footer(): JSX.Element {
 					<StyledContact>
 						<h1>{COMPANY_NAME}</h1>
 						<p>
-							Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials
+							Valley Construction Supply continually offers
+							promotions. Check out our promotions page for our
+							current specials
 						</p>
 						<StyledSocials>
-							<a href={COMPANY_SOCIALS.linkedin}  target="_blank" rel="noreferrer">
+							<a
+								href={COMPANY_SOCIALS.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FaLinkedin size={size} />
 							</a>
-							<a href={COMPANY_SOCIALS.facebook}  target="_blank" rel="noreferrer">
+							<a
+								href={COMPANY_SOCIALS.facebook}
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FaFacebook size={size} />
 							</a>
-							<a href={COMPANY_SOCIALS.instagram} target="_blank" rel="noreferrer">
+							<a
+								href={COMPANY_SOCIALS.instagram}
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FaInstagram size={size} />
 							</a>
 						</StyledSocials>
 					</StyledContact>
-					<StyledList>
-						<li>
-							<h2>Services</h2>
-						</li>
-						{services.map((data) => (
-							<li key={data}>
-								<Arrow />
-								{data}
-							</li>
-						))}
-					</StyledList>
 					<StyledList>
 						<li>
 							<h2>Quick Links</h2>
@@ -142,11 +143,46 @@ export default function footer(): JSX.Element {
 							</a>
 						))}
 					</StyledList>
+					<StyledList>
+						<li>
+							<h2>Contact </h2>
+						</li>
+						<a
+							href={`mailto:${COMPANY_EMAIL}`}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<li>
+								<Arrow />
+								{COMPANY_EMAIL}
+							</li>
+						</a>
+						<a
+							href={`tel:+1${COMPANY_PHONE}`}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<li>
+								<Arrow />
+								{COMPANY_PHONE}
+							</li>
+						</a>
+						<a
+							href="https://www.google.com/maps/place/3778+W+Cheyenne+Ave+STE+120,+N,+North+Las+Vegas,+NV+89032/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<li>
+								<Arrow />
+								{COMPANY_ADDRESS}
+							</li>
+						</a>
+					</StyledList>
 				</FooterInside>
 			</Footer>
 			<StyledCopyright>
 				Copyright © 2021{" "}
-				<a href="https://webdefy.tech">
+				<a href="https://webdefyer.com">
 					Designed with <FaHeart color="red" /> by
 					<Span> Webdefyer</Span>
 				</a>{" "}

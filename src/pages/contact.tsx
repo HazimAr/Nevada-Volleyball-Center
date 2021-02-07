@@ -1,9 +1,10 @@
 import { Span, StyledButton } from "@styles/index.theme";
 import axios from "axios";
-import { COMPANY_EMAIL } from "config";
+import { COMPANY_EMAIL, COMPANY_PHONE, COMPANY_ADDRESS } from "config";
 import Image from "next/image";
 import { useState } from "react";
 import { FaMailBulk, FaMobile } from "react-icons/fa";
+import { BsHouseFill } from "react-icons/bs";
 import styled from "styled-components";
 
 const StyledOutside = styled.div`
@@ -44,11 +45,19 @@ const StyledTitle = styled.h2`
 	font-family: var(--font-title);
 `;
 const StyledDivs = styled.div`
-	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+`;
+const ContactInfoDiv = styled.div`
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	div {
+		width: 300px;
+	}
 `;
 
 // eslint-disable-next-line import/no-default-export
@@ -125,14 +134,24 @@ export default function Contact(): JSX.Element {
 				<StyledButton aria-label="Submit">Submit</StyledButton>
 			</StyledForm>
 			<StyledDivs>
-				<FaMailBulk color="var(--highlight)" size="70px" />
-				<h3>{COMPANY_EMAIL}</h3>
-				<FaMobile color="var(--highlight)" size="70px" />
-				<h3>{COMPANY_EMAIL}</h3>
+				<ContactInfoDiv>
+					<div>
+						<FaMailBulk color="var(--secondary)" size="70px" />
+						<h3>{COMPANY_EMAIL}</h3>
+					</div>
+					<div>
+						<FaMobile color="var(--secondary)" size="70px" />
+						<h3>{COMPANY_PHONE}</h3>
+					</div>
+					<div>
+						<BsHouseFill color="var(--secondary)" size="70px" />
+						<h3>{COMPANY_ADDRESS}</h3>
+					</div>
+				</ContactInfoDiv>
 				<Image
 					alt=""
 					layout="intrinsic"
-					src="/pack/contact.svg"
+					src="/logo.png"
 					width={600}
 					height={500}
 				/>
