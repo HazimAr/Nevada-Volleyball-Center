@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaAirbnb } from "react-icons/fa";
+import { FaBuilding, FaMoneyBill, FaVolleyballBall } from "react-icons/fa";
 import styled from "styled-components";
 
 const Container = styled.section`
@@ -7,7 +7,7 @@ const Container = styled.section`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 50px 0;
+	padding:1px 0;
 	z-index: 1000;
 	position: relative;
 `;
@@ -79,7 +79,13 @@ const Div = styled.div`
 	clip-path: polygon(49% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 `;
 function Img() {
-	return <FaAirbnb size="60px" color="var(--secondary)" />;
+	return <FaVolleyballBall size="50px" color="var(--secondary)" />;
+}
+function Img2() {
+	return <FaBuilding size="50px" color="var(--secondary)" />;
+}
+function Img3() {
+	return <FaMoneyBill size="50px" color="var(--secondary)" />;
 }
 
 // eslint-disable-next-line import/no-default-export
@@ -94,13 +100,13 @@ export default function Cards(): JSX.Element {
 				description="Here at Valley Construction Supply we believe that the construction industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their construction material needs"
 			/>
 			<Card
-				Image={Img}
+				Image={Img2}
 				link="/link"
 				title="Complete Inventory"
 				description="Here at Valley Construction Supply we believe that the construction industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their construction material needs"
 			/>
 			<Card
-				Image={Img}
+				Image={Img3}
 				link="/link"
 				title="Complete Inventory"
 				description="Here at Valley Construction Supply we believe that the construction industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their construction material needs"

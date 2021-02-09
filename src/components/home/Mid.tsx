@@ -1,10 +1,11 @@
+import { Span } from "@styles/index.theme";
 import Image from "next/image";
 import { FaAccessibleIcon } from "react-icons/fa";
 import styled from "styled-components";
 
 const Container = styled.section`
 	background-color: white;
-	padding: 200px 0;
+	padding: 80px 0;
 	text-align: left;
 	position: relative;
 	h1 {
@@ -18,14 +19,22 @@ const Container = styled.section`
 `;
 const Text = styled.div`
 	box-sizing: border-box;
-	padding: 0 5%;
+	max-width: 600px;
+	text-align:center;
+	margin:auto;
+	h1 {
+		font-weight: 400;
+		font-size: 42px;
+		margin:20px auto;
+	}
 `;
 const Flex = styled.div`
 	background-color: var(--secondary);
-	margin: 100px 0;
+	margin: 60px 0;
 	padding: 20px 0;
+	padding-bottom: 80px;
 	.upto {
-		transform: translateY(-50px);
+		transform: translateY(-60px);
 		max-width: 1200px;
 		margin: auto;
 		display: flex;
@@ -57,6 +66,7 @@ const NumDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	margin:20px 40px;
 	h3,
 	h4 {
 		margin: 5px 0;
@@ -89,16 +99,15 @@ export default function Section(): JSX.Element {
 	return (
 		<Container>
 			<Text>
-				<h1>ABOUT VALLEY CONSTRUCTION SUPPLY</h1>
+				<h1>About <Span>Nevada Volleyball Center</Span></h1>
 				<p>
-					Next day delivery, quality products and superior customer
-					service since 1982.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est esse laudantium harum ea quas aliquid sequi id eius, maiores reiciendis 
 				</p>
 			</Text>
 			<div>
 				<Flex>
 					<div className="upto">
-						<Image src="/logo.png" width={400} height={400} />
+						<Image src="/Images/IMG_7250.png" width={500} height={350} />
 						<Card>
 							<h2>Committed to superior quality and results</h2>
 							<p>

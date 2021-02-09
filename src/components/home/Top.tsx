@@ -10,6 +10,7 @@ const Container = styled.section`
 const StyledImage = styled.img`
 	z-index: -1;
 	width: 100%;
+	min-width: 800px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -28,11 +29,20 @@ const Inside = styled.div`
 	}
 `;
 const StyledText = styled.div`
+	width:90%;
 	max-width: 1200px;
+	box-sizing: border-box;
+	padding-right: 30%;
 	text-align: left;
 	font-size: 20px;
+	@media (max-width:600px){
+		padding-right: unset;
+		h1 {
+			font-size: 45px;
+		}
+	}
 	p {
-		color: inherit;
+		color:inherit;
 	}
 `;
 const StyledH1 = styled.h1`
@@ -53,8 +63,7 @@ export default function Intro(): JSX.Element {
 							{COMPANY_INFO.name} <br />
 						</StyledH1>
 						<p>
-							We provide 100% custom coded websites with superior
-							search engine optimized results
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, harum in aut quae laboriosam est sunt officiis beatae a aperiam optio et iusto excepturi minima obcaecati expedita facilis odit tempora.
 						</p>
 					</StyledText>
 				</Inside>

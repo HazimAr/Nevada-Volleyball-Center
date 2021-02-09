@@ -90,7 +90,7 @@ const StyledHeader = styled.header`
 	display: flex;
 	align-items: center;
 	width: 90%;
-	padding: 0px 5%;
+	padding: 0 5%;
 	z-index: 2000;
 	background-color: white;
 `;
@@ -104,7 +104,7 @@ const StyledDropHeader = styled(StyledHeader)`
 const StyledLinkContainer = styled.ul`
 	display: flex;
 	width: 60%;
-	max-width: 300px;
+	max-width: 400px;
 	margin-left: auto;
 	font-size: 25px;
 	@media (max-width: 800px) {
@@ -118,7 +118,7 @@ const StyledLinkContainer = styled.ul`
 	}
 `;
 const StyledLink = styled.li`
-	margin: 10px auto;
+	margin: 8px auto;
 	position: relative;
 	&:hover {
 		cursor: pointer;

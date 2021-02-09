@@ -1,11 +1,12 @@
 import { Span } from "@styles/index.theme";
+import { COMPANY_INFO } from "config";
 import Image from "next/image";
 import Link from "next/link";
 import {
 	FaAccessibleIcon,
 	FaCheckCircle,
 	FaWrench,
-	FaYoast,
+	FaMountain,
 } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
@@ -34,7 +35,6 @@ const StyledTextDiv = styled.div`
 	flex-direction: column;
 	text-align: left;
 	h1 {
-		text-align: right;
 		font-size: 40px;
 		margin: 0;
 	}
@@ -70,8 +70,8 @@ const StyledCard = styled.div`
 		margin-left: 10px;
 		transition: transform ease-in-out 0.3s;
 	}
-	:hover button svg {
-		transform: translateX(10px);
+	button:hover svg {
+		transform: translateX(7px);
 	}
 `;
 const CardContainer = styled.div`
@@ -108,7 +108,7 @@ function Img3() {
 }
 function Img4() {
 	return (
-		<FaYoast color="var(--secondary)" size="40px" className="card-img" />
+		<FaMountain color="var(--secondary)" size="40px" className="card-img" />
 	);
 }
 
@@ -139,7 +139,7 @@ export default function Promise(): JSX.Element {
 			<div>
 				<StyledTextDiv>
 					<h1>
-						<Span>FOR</Span> HAZIMOS!
+						<Span>{COMPANY_INFO.name}</Span>
 					</h1>
 					<p>
 						Here at Valley Construction Supply we believe that the

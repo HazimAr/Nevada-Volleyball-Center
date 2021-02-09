@@ -22,7 +22,7 @@ const COMPANY_SOCIALS = {
 export const headerOptions = [
 	["Home", "/#"],
 	["Services", "/services"],
-	["Contact", "/contact"],
+	["Contact us", "/contact"],
 ];
 
 export {
