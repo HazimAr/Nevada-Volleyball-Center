@@ -60,10 +60,12 @@ export default function Intro(): JSX.Element {
 				<Inside>
 					<StyledText id="intro__text">
 						<StyledH1>
-							{COMPANY_INFO.name} <br />
+							Nevada <br />
+							Volleyball <br />
+							Center <br />
 						</StyledH1>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, harum in aut quae laboriosam est sunt officiis beatae a aperiam optio et iusto excepturi minima obcaecati expedita facilis odit tempora.
+							Nevada Volleyball Center is a state of the art facility, with training equipment fit for any athletes needs. Blah blah blah blah blah blah blah blah blah blah blah blah blah
 						</p>
 					</StyledText>
 				</Inside>

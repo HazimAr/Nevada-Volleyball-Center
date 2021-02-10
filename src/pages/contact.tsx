@@ -157,7 +157,7 @@ export default function Contact(): JSX.Element {
 							<h3>{COMPANY_INFO.phone}</h3>
 						</a>
 					</div>
-					<div>
+					{/* <div>
 						<BsHouseFill color="var(--secondary)" size="70px" />
 						<a
 							href="https://www.google.com/maps/place/3778+W+Cheyenne+Ave+STE+120,+North+Las+Vegas,+NV+89032/"
@@ -170,7 +170,7 @@ export default function Contact(): JSX.Element {
 								{COMPANY_INFO.address2}
 							</h3>
 						</a>
-					</div>
+					</div> */}
 				</ContactInfoDiv>
 				<Image
 					alt=""

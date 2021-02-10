@@ -96,20 +96,20 @@ export default function Cards(): JSX.Element {
 			<Card
 				Image={Img}
 				link="/link"
-				title="Complete Inventory"
+				title="Volleyball"
 				description="Here at Valley Construction Supply we believe that the construction industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their construction material needs"
 			/>
 			<Card
 				Image={Img2}
 				link="/link"
-				title="Complete Inventory"
-				description="Here at Valley Construction Supply we believe that the construction industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their construction material needs"
+				title="Large facility"
+				description="With our modern 17,000 square foot facility, we can provide any athlete an enriching volleyball experience"
 			/>
 			<Card
 				Image={Img3}
 				link="/link"
 				title="Complete Inventory"
-				description="Here at Valley Construction Supply we believe that the construction industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their construction material needs"
+				description="We have everything any athlete will ever need. Slip resitent flooring, Netting between courts to preventing intruptions and office area for any administrative realated needs"
 			/>
 		</Container>
 	);
