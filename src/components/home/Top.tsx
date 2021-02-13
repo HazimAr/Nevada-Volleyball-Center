@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { COMPANY_INFO } from "../../config";
-
 const Container = styled.section`
 	min-height: 600px;
 	height: 50vh;

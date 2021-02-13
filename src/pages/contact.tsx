@@ -2,7 +2,6 @@ import { Span, StyledButton } from "@styles/index.theme";
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
-import { BsHouseFill } from "react-icons/bs";
 import { FaMailBulk, FaMobile } from "react-icons/fa";
 import styled from "styled-components";
 
