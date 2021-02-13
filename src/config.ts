@@ -15,17 +15,17 @@ const EMAIL_LIST =
 	"hazimarafa69@gmail.com, sparksvolleyballclub@gmail.com, nevadavolleyballcenter@gmail.com";
 
 const COMPANY_SOCIALS = {
-	instagram: "https://www.instagram.com/webdefyer/",
-	facebook: "https://www.facebook.com/WebDefyer-107501398041284",
-	linkedin: "https://www.linkedin.com/company/webdefyer",
+	instagram: "https://www.instagram.com/nevadavolleyball/",
+	facebook:
+		"https://www.facebook.com/Nevada-Volleyball-Center-100180091957646/",
 };
+
 export const headerOptions = [
 	["Home", "/#"],
 	["Court Rentals", "/rentals"],
 	["Events", "/events"],
 	["Covid-19", "/covid"],
 	["Contact Us", "/contact"],
-
 ];
 
 export {

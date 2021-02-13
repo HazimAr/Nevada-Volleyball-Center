@@ -20,12 +20,12 @@ const Container = styled.section`
 const Text = styled.div`
 	box-sizing: border-box;
 	max-width: 600px;
-	text-align:center;
-	margin:auto;
+	text-align: center;
+	margin: auto;
 	h1 {
 		font-weight: 400;
 		font-size: 42px;
-		margin:20px auto;
+		margin: 20px auto;
 	}
 `;
 const Flex = styled.div`
@@ -66,7 +66,7 @@ const NumDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	margin:20px 40px;
+	margin: 20px 40px;
 	h3,
 	h4 {
 		margin: 5px 0;
@@ -99,15 +99,23 @@ export default function Section(): JSX.Element {
 	return (
 		<Container>
 			<Text>
-				<h1>About <Span>Nevada Volleyball Center</Span></h1>
+				<h1>
+					About <Span>Nevada Volleyball Center</Span>
+				</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est esse laudantium harum ea quas aliquid sequi id eius, maiores reiciendis 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Minus est esse laudantium harum ea quas aliquid sequi id
+					eius, maiores reiciendis
 				</p>
 			</Text>
 			<div>
 				<Flex>
 					<div className="upto">
-						<Image src="/Images/IMG_7250.png" width={500} height={350} />
+						<Image
+							src="/Images/IMG_7250.png"
+							width={500}
+							height={350}
+						/>
 						<Card>
 							<h2>Committed to superior quality and results</h2>
 							<p>

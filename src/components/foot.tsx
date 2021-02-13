@@ -58,7 +58,7 @@ const StyledList = styled.ul`
 		color: white;
 	}
 	li {
-		margin: 5px 0;
+		margin: 10px 0;
 		div svg {
 			transition: transform 0.3s ease;
 		}
@@ -100,7 +100,7 @@ export default function footer(): JSX.Element {
 			<Footer>
 				<FooterInside>
 					<StyledContact>
-						<h1 style={{color: 'white'}}>{COMPANY_INFO.name}</h1>
+						<h1 style={{ color: "white" }}>{COMPANY_INFO.name}</h1>
 						<p>
 							Valley Construction Supply continually offers
 							promotions. Check out our promotions page for our
@@ -141,7 +141,7 @@ export default function footer(): JSX.Element {
 					</StyledContact>
 					<StyledList>
 						<li>
-							<h2 >Quick Links</h2>
+							<h2>Quick Links</h2>
 						</li>
 						{headerOptions.map((data) => (
 							<a href={data[1]} key={data[0]}>
@@ -162,7 +162,7 @@ export default function footer(): JSX.Element {
 							rel="noreferrer"
 						>
 							<li>
-								<Arrow />
+
 								{COMPANY_INFO.email}
 							</li>
 						</a>
@@ -172,7 +172,7 @@ export default function footer(): JSX.Element {
 							rel="noreferrer"
 						>
 							<li>
-								<Arrow />
+
 								{COMPANY_INFO.phone}
 							</li>
 						</a>

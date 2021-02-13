@@ -84,7 +84,7 @@ export default function Contact(): JSX.Element {
 		<StyledOutside id="contact">
 			<StyledForm onSubmit={handleSubmit}>
 				<StyledTitle>
-					Tell Us About Your <Span>Project</Span>
+					Contact <Span>Us</Span>
 				</StyledTitle>
 				<Input
 					aria-label="Name"

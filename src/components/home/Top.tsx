@@ -27,20 +27,20 @@ const Inside = styled.div`
 	}
 `;
 const StyledText = styled.div`
-	width:90%;
+	width: 90%;
 	max-width: 1200px;
 	box-sizing: border-box;
 	padding-right: 30%;
 	text-align: left;
 	font-size: 20px;
-	@media (max-width:600px){
+	@media (max-width: 600px) {
 		padding-right: unset;
 		h1 {
 			font-size: 45px;
 		}
 	}
 	p {
-		color:inherit;
+		color: inherit;
 	}
 `;
 const StyledH1 = styled.h1`
@@ -63,7 +63,10 @@ export default function Intro(): JSX.Element {
 							Center <br />
 						</StyledH1>
 						<p>
-							Nevada Volleyball Center is a state of the art facility, with training equipment fit for any athletes needs. Blah blah blah blah blah blah blah blah blah blah blah blah blah
+							Nevada Volleyball Center is a state of the art
+							facility, with training equipment fit for any
+							athletes needs. Blah blah blah blah blah blah blah
+							blah blah blah blah blah blah
 						</p>
 					</StyledText>
 				</Inside>
