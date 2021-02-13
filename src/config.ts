@@ -7,7 +7,7 @@ const IS_BROWSER = typeof window !== "undefined";
 const COMPANY_INFO = {
 	name: "Nevada Volleyball Center",
 	email: "NevadaVolleyballCenter@gmail.com",
-	phone: "702-666-6666",
+	phone: "702-665-6069",
 	address1: "3778 W. Cheyenne Ave STE 120, ",
 	address2: "N. Las Vegas, NV 8903",
 };
@@ -21,8 +21,11 @@ const COMPANY_SOCIALS = {
 };
 export const headerOptions = [
 	["Home", "/#"],
-	["Services", "/services"],
-	["Contact us", "/contact"],
+	["Court Rentals", "/rentals"],
+	["Events", "/events"],
+	["Covid-19", "/covid"],
+	["Contact Us", "/contact"],
+
 ];
 
 export {

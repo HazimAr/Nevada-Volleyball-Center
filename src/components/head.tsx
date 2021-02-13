@@ -104,7 +104,7 @@ const StyledDropHeader = styled(StyledHeader)`
 const StyledLinkContainer = styled.ul`
 	display: flex;
 	width: 60%;
-	max-width: 400px;
+	max-width: 700px;
 	margin-left: auto;
 	font-size: 25px;
 	@media (max-width: 800px) {

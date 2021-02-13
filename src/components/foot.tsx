@@ -6,8 +6,8 @@ import styled from "styled-components";
 import { COMPANY_INFO, COMPANY_SOCIALS, headerOptions } from "../config";
 
 const Footer = styled.footer`
-	background-color: #262f3a;
-	color: rgba(223, 223, 223, 0.712); ;
+	background-color: var(--primary);
+	color: rgba(223, 223, 223, 0.712);
 `;
 const FooterInside = styled.div`
 	width: 90%;
@@ -23,20 +23,24 @@ const FooterInside = styled.div`
 `;
 const StyledCopyright = styled.p`
 	margin: 0;
-	border-top: #2c4258 solid 0.5px;
+	border-top: #535351 solid 0.5px;
 	font-size: 14px;
 	padding: 20px 5%;
 	box-sizing: border-box;
 	font-size: 20px;
 	text-align: left;
-	background-color: #262f3a;
+	background-color: var(--primary);
 	color: rgba(223, 223, 223, 0.712);
+	div {
+		max-width: 1000px;
+		margin: auto;
+	}
 	@media (max-width: 700px) {
 		font-size: 16px;
 	}
 `;
 const StyledContact = styled.div`
-	max-width: 320px;
+	max-width: 400px;
 	text-align: left;
 	& h2 {
 		font-size: 24px;
@@ -96,39 +100,48 @@ export default function footer(): JSX.Element {
 			<Footer>
 				<FooterInside>
 					<StyledContact>
-						<h1>{COMPANY_INFO.name}</h1>
+						<h1 style={{color: 'white'}}>{COMPANY_INFO.name}</h1>
 						<p>
 							Valley Construction Supply continually offers
 							promotions. Check out our promotions page for our
 							current specials
 						</p>
 						<StyledSocials>
-							<a
+							{/* <a
 								href={COMPANY_SOCIALS.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FaLinkedin size={size} />
-							</a>
+								<FaLinkedin
+									size={size}
+									color="var(--secondary)"
+								/>
+							</a> */}
 							<a
 								href={COMPANY_SOCIALS.facebook}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FaFacebook size={size} />
+								<FaFacebook
+									size={size}
+									color="var(--secondary)"
+								/>
 							</a>
 							<a
 								href={COMPANY_SOCIALS.instagram}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FaInstagram size={size} />
+								<FaInstagram
+									size={size}
+									color="var(--secondary)"
+								/>
 							</a>
 						</StyledSocials>
 					</StyledContact>
 					<StyledList>
 						<li>
-							<h2>Quick Links</h2>
+							<h2 >Quick Links</h2>
 						</li>
 						{headerOptions.map((data) => (
 							<a href={data[1]} key={data[0]}>
@@ -169,10 +182,10 @@ export default function footer(): JSX.Element {
 							rel="noreferrer"
 						>
 							<li>
-								<Arrow />
+								{/* <Arrow /> */}
 								{COMPANY_INFO.address1}
 								<br />
-								<Arrow />
+								{/* <Arrow /> */}
 								{COMPANY_INFO.address2}
 							</li>
 						</a>
@@ -180,11 +193,13 @@ export default function footer(): JSX.Element {
 				</FooterInside>
 			</Footer>
 			<StyledCopyright>
-				Copyright © 2021{" "}
-				<a href="https://webdefyer.com">
-					Designed with <FaHeart color="red" /> by
-					<Span> Webdefyer</Span>
-				</a>{" "}
+				<div>
+					Copyright © 2021{" "}
+					<a href="https://webdefyer.com">
+						Designed with <FaHeart color="red" /> by
+						<Span> Webdefyer</Span>
+					</a>{" "}
+				</div>
 			</StyledCopyright>
 		</>
 	);
