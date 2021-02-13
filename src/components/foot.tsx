@@ -161,20 +161,14 @@ export default function footer(): JSX.Element {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<li>
-
-								{COMPANY_INFO.email}
-							</li>
+							<li>{COMPANY_INFO.email}</li>
 						</a>
 						<a
 							href={`tel:+1${COMPANY_INFO.phone}`}
 							target="_blank"
 							rel="noreferrer"
 						>
-							<li>
-
-								{COMPANY_INFO.phone}
-							</li>
+							<li>{COMPANY_INFO.phone}</li>
 						</a>
 						<a
 							href="https://www.google.com/maps/place/3778+W+Cheyenne+Ave+STE+120,+North+Las+Vegas,+NV+89032/"
