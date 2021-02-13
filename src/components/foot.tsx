@@ -1,5 +1,5 @@
 import { Span } from "@styles/index.theme";
-import { FaFacebook, FaHeart, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaHeart, FaInstagram } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
