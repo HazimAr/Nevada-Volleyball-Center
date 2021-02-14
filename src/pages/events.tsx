@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import styled from "styled-components";
 
 import clinicData from "../content/clinics.json";
