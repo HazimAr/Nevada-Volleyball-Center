@@ -23,7 +23,7 @@ const Textarea = styled.textarea`
 	max-height: 300px;
 `;
 const StyledForm = styled.form`
-	margin:0 100px;
+	margin: 0 100px;
 	width: 90%;
 	max-width: 400px;
 	display: flex;

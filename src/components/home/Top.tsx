@@ -33,7 +33,7 @@ const StyledText = styled.div`
 	padding-right: 30%;
 	text-align: left;
 	font-size: 20px;
-	margin-bottom:100px;
+	margin-bottom: 100px;
 	@media (max-width: 600px) {
 		padding-right: unset;
 		h1 {
@@ -43,7 +43,6 @@ const StyledText = styled.div`
 	p {
 		color: inherit;
 	}
-	
 `;
 const StyledH1 = styled.h1`
 	font-size: 60px;

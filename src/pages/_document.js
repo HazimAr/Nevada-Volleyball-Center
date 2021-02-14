@@ -32,19 +32,10 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en-us">
 				<Head>
-					<meta
-						name="description"
-						content="Gym"
-					/>
+					<meta name="description" content="Gym" />
 
-					<meta
-						itemProp="name"
-						content="Nevada Volleyball Center"
-					/>
-					<meta
-						itemProp="description"
-						content="Gym"
-					/>
+					<meta itemProp="name" content="Nevada Volleyball Center" />
+					<meta itemProp="description" content="Gym" />
 					<meta itemProp="image" content="/logo.png" />
 
 					<meta
@@ -56,10 +47,7 @@ export default class MyDocument extends Document {
 						property="og:title"
 						content="Nevada Volleyball Center"
 					/>
-					<meta
-						property="og:description"
-						content="Gym"
-					/>
+					<meta property="og:description" content="Gym" />
 					<meta property="og:image" content="/logo.png" />
 
 					<meta name="twitter:card" content="summary_large_image" />
@@ -67,10 +55,7 @@ export default class MyDocument extends Document {
 						name="twitter:title"
 						content="Nevada Volleyball Center"
 					/>
-					<meta
-						name="twitter:description"
-						content="Gym"
-					/>
+					<meta name="twitter:description" content="Gym" />
 					<meta name="twitter:image" content="/logo.png" />
 
 					<script
