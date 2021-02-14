@@ -19,10 +19,11 @@ const Input = styled.input`
 `;
 const Textarea = styled.textarea`
 	resize: vertical;
-	min-height: 50px;
+	min-height: 100px;
 	max-height: 300px;
 `;
 const StyledForm = styled.form`
+	margin:0 100px;
 	width: 90%;
 	max-width: 400px;
 	display: flex;
