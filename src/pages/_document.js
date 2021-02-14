@@ -32,45 +32,44 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en-us">
 				<Head>
-					<title>NextJS Boilerplate | Nik Schaefer</title>
 					<meta
 						name="description"
-						content="Boilerplate built to scale containing Typescript + NextJS + Google Analytics + ESLint + Jest + Styled Components + Icons"
+						content="Gym"
 					/>
 
 					<meta
 						itemProp="name"
-						content="NextJS Boilerplate | Nik Schaefer"
+						content="Nevada Volleyball Center"
 					/>
 					<meta
 						itemProp="description"
-						content="Boilerplate built to scale containing Typescript + NextJS + Google Analytics + ESLint + Jest + Styled Components + Icons"
+						content="Gym"
 					/>
 					<meta itemProp="image" content="/logo.png" />
 
 					<meta
 						property="og:url"
-						content="https://boilerplate.nikschaefer.tech"
+						content="https://nevadavolleyballcenter.com"
 					/>
 					<meta property="og:type" content="website" />
 					<meta
 						property="og:title"
-						content="NextJS Boilerplate | Nik Schaefer"
+						content="Nevada Volleyball Center"
 					/>
 					<meta
 						property="og:description"
-						content="Boilerplate built to scale containing Typescript + NextJS + Google Analytics + ESLint + Jest + Styled Components + Icons"
+						content="Gym"
 					/>
 					<meta property="og:image" content="/logo.png" />
 
 					<meta name="twitter:card" content="summary_large_image" />
 					<meta
 						name="twitter:title"
-						content="NextJS Boilerplate | Nik Schaefer"
+						content="Nevada Volleyball Center"
 					/>
 					<meta
 						name="twitter:description"
-						content="Boilerplate built to scale containing Typescript + NextJS + Google Analytics + ESLint + Jest + Styled Components + Icons"
+						content="Gym"
 					/>
 					<meta name="twitter:image" content="/logo.png" />
 
