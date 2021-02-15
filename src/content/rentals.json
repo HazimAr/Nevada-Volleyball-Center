@@ -1,0 +1,23 @@
+[
+	{
+		"image": "/logo.png",
+		"title": "Growing Community",
+		"h3": "Starting at",
+		"h2": "60$ per hour",
+		"description": "MUST SIGN A LEASE LASTING UNDER 6 MONTHS"
+	},
+	{
+		"image": "/logo.png",
+		"title": "",
+		"h3": "Starting at",
+		"h2": "55$ per hour",
+		"description": "MUST SIGN A LEASE LASTING BEWTWEEN 6 TO 12 MONTHS"
+	},
+	{
+		"image": "/logo.png",
+		"title": "Professional Club",
+		"h3": "Starting at",
+		"h2": "50$ per hour",
+		"description": "MUST SIGN A LEASE LASTING LONGER THEN 12 MONTHS"
+	}
+]
