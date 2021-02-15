@@ -1,24 +1,9 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
-
-type CardDataType = {
-	image: string,
-	title: string,
-	h3: string,
-	h4: string,
-	description:string,
-}
-
-const CardData: CardDataType[] = [
-	{
-		image: "/",
-		title: "Growing Buisness",
-		h3: "Starting at",
-		h4: "Starting at",
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, in nobis! Perspiciatis magnam quam, itaque odit doloribus optio natus sint iste maiores dolores tempore veritatis et nesciunt, aliquam minus vel."
-	}
-]
+import CardData from '../content/rentails.json'
 
 const Content = styled.section`
 	margin: 100px auto;
@@ -26,7 +11,6 @@ const Content = styled.section`
 		font-size: 50px;
 	}
 `;
-
 const StyledButton = styled.button`
 	font-size: 25px;
 	background-color: var(--secondary);
@@ -35,7 +19,6 @@ const StyledButton = styled.button`
 	border-radius: 60px;
 	display: flex;
 	align-items: center;
-	margin: auto;
 	transition: background-color 0.3s ease;
 	svg {
 		padding-left: 10px;
@@ -50,14 +33,29 @@ const StyledButton = styled.button`
 	}
 `;
 const Card = styled.div`
-
-
+	text-align:left;
+	max-width:400px;
+	width:90%;
+	margin:20px;
 `
-
+const TextDiv = styled.div`
+	h1 {
+		font-size: 30px;
+		margin:10px 0;
+	}
+	h2 {
+		margin:5px 0;
+	}
+	h3 {
+		font-style: italic;
+		margin:0;
+		font-weight: 300;
+	}
+`
 const PlanMain = styled.section`
 	display:flex;
 	flex-wrap:wrap;
-
+	justify-content:center;
 `
 // eslint-disable-next-line import/no-default-export
 export default function Events(): JSX.Element {
@@ -65,13 +63,22 @@ export default function Events(): JSX.Element {
 		<main>
 			<Content>
 				<h1>Find the plan that's right for you</h1>
-				<StyledButton>Get in Touch</StyledButton>
 				<PlanMain>
 					{CardData?.map(data => {
 						return (
 							<Card key={data.title}>
-								<Image src={data.image} height={400} width={300} alt="" />
-
+								<Image src={data.image} height={400} width={400} alt="" />
+								<TextDiv>
+									<h1>{data.title}</h1>
+									<h3>{data.h3}</h3>
+									<h2>{data.h2}</h2>
+									<p>{data.description}</p>
+									<Link href="/contact">
+										<a>
+											<StyledButton style={{fontSize:'18px'}}>Get in Touch</StyledButton>
+										</a>
+									</Link>
+								</TextDiv>
 							</Card>
 						)
 					})}
