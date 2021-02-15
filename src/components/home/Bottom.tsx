@@ -132,11 +132,10 @@ export default function Promise(): JSX.Element {
 						<Span>{COMPANY_INFO.name}</Span>
 					</h1>
 					<p>
-						Here at Valley Construction Supply we believe that the
-						construction industry is a relationship business and
-						that our customers deserve personalized, hands-on
-						customer service that serves them beyond their
-						construction material needs
+						Here at Nevada Volleyball Center we believe that the
+						volleyball industry is a relationship between the athletes and the court
+						our customers deserve personalized, hands-on customer
+						service that serves them beyond their volleyball needs
 					</p>
 				</StyledTextDiv>
 				<Image
@@ -151,19 +150,19 @@ export default function Promise(): JSX.Element {
 					link="/"
 					Image={Img}
 					title="Court Rentals"
-					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
+					text="We are renting out all 3 of our courts starting as $50/hour"
 				/>
 				<Card
 					link="/"
 					Image={Img2}
 					title="Events"
-					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
+					text="Every week we host Events ranging from Open Gyms, Clinics, and tournements"
 				/>
 				<Card
 					link="/"
 					Image={Img3}
 					title="Covid-19"
-					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
+					text="Health and saftey is our number 1 priotity, good spell, so we take precautions and follow regulations to ensure all our staff, athletes and spectators are safe."
 				/>
 			</CardContainer>
 		</Section>

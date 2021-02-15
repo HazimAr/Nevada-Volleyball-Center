@@ -1,11 +1,26 @@
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 import styled from "styled-components";
 
+
+type CardDataType = {
+	image: string,
+	title: string,
+	h3: string,
+	h4: string,
+	description:string,
+}
+
+const CardData: CardDataType[] = [
+	{
+		image: "/",
+		title: "Growing Buisness",
+		h3: "Starting at",
+		h4: "Starting at",
+		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, in nobis! Perspiciatis magnam quam, itaque odit doloribus optio natus sint iste maiores dolores tempore veritatis et nesciunt, aliquam minus vel."
+	}
+]
+
 const Content = styled.section`
-	text-align: left;
-	width: 90%;
-	max-width: 700px;
 	margin: 100px auto;
 	h1 {
 		font-size: 50px;
@@ -34,47 +49,33 @@ const StyledButton = styled.button`
 		}
 	}
 `;
+const Card = styled.div`
 
+
+`
+
+const PlanMain = styled.section`
+	display:flex;
+	flex-wrap:wrap;
+
+`
 // eslint-disable-next-line import/no-default-export
 export default function Events(): JSX.Element {
 	return (
 		<main>
 			<Content>
-				<h2>Covid-19 Disclaimer</h2>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Fugiat natus, quos accusantium dolorum, veritatis veniam
-					ipsum incidunt esse facilis mollitia eum beatae perspiciatis
-					earum dolor sequi dolore doloribus minima vel.
-				</p>
-				<h1>Court Rentals</h1>
-				<p>
-					Loram insome dolor sit amet consectetur, adipisicing elit.
-					Reiciendis ipsum quasi eveniet reprehenderit, architecto
-					quas quo. Laboriosam officiis quo quisquam! Amet repellat et
-					ratione saepe laborum necessitatibus molestiae praesentium
-					quos?
-				</p>
-				<h2>Pricing</h2>
-				<p>
-					$50 for 12 months <br /> $55 for 6 months <br /> $60 for
-					under 6months
-				</p>
-				<p>
-					Loram insom dolor sit amet consectetur, adipisicing elit.
-					Reiciendis ipsum quasi eveniet reprehenderit, architecto
-					quas quo. Laboriosam officiis quo quisquam! Amet repellat et
-					ratione saepe laborum necessitatibus molestiae praesentium
-					quos?
-				</p>
-				<Link href="/contact">
-					<a>
-						<StyledButton>
-							Get In Touch
-							<FaArrowRight />
-						</StyledButton>
-					</a>
-				</Link>
+				<h1>Find the plan that's right for you</h1>
+				<StyledButton>Get in Touch</StyledButton>
+				<PlanMain>
+					{CardData?.map(data => {
+						return (
+							<Card key={data.title}>
+								<Image src={data.image} height={400} width={300} alt="" />
+
+							</Card>
+						)
+					})}
+				</PlanMain>
 			</Content>
 		</main>
 	);

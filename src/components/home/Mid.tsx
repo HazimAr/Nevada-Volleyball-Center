@@ -129,8 +129,8 @@ export default function Section(): JSX.Element {
 					</div>
 					<NumDivDiv>
 						<CardThing
-							title="100K+"
-							text="Industry Leader"
+							title="500+"
+							text="Satisfied Customersthey"
 							Image={Func}
 						/>
 						<CardThing
@@ -139,8 +139,8 @@ export default function Section(): JSX.Element {
 							Image={Func}
 						/>
 						<CardThing
-							title="100K+"
-							text="Industry Leader"
+							title="3+"
+							text="Slip Resistent Courts"
 							Image={Func}
 						/>
 						<CardThing
