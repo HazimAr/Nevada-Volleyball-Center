@@ -6,7 +6,6 @@ import {
 	FaAccessibleIcon,
 	FaCheckCircle,
 	FaWrench,
-	FaMountain,
 } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
@@ -79,7 +78,7 @@ const CardContainer = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	text-align: left;
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: auto;
 `;
 
@@ -104,11 +103,6 @@ function Img3() {
 			size="40px"
 			className="card-img"
 		/>
-	);
-}
-function Img4() {
-	return (
-		<FaMountain color="var(--secondary)" size="40px" className="card-img" />
 	);
 }
 
@@ -173,12 +167,6 @@ export default function Promise(): JSX.Element {
 					link="/"
 					Image={Img3}
 					title="Covid-19"
-					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
-				/>
-				<Card
-					link="/"
-					Image={Img4}
-					title="Contact Us"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 			</CardContainer>
