@@ -20,12 +20,12 @@ const StyledCard = styled.div`
 	padding-bottom: 100px;
 	background-color: #f6f7f9;
 	position: relative;
-	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 83%);
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 87.5%);
 	&:nth-child(3) {
 		clip-path: polygon(100% 0, 100% 83%, 53% 92%, 0 85%, 0 0);
 	}
 	&:nth-child(2) {
-		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%);
+		clip-path: polygon(0 0, 100% 0, 100% 87.5%, 0 75%);
 	}
 	h2 {
 		font-size: 20px;
@@ -76,7 +76,7 @@ const Div = styled.div`
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	clip-path: polygon(49% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+	clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 `;
 function Img() {
 	return <FaVolleyballBall size="50px" color="var(--secondary)" />;

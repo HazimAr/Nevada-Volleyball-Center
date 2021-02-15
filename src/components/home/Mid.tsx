@@ -1,7 +1,8 @@
 import { Span } from "@styles/index.theme";
 import Image from "next/image";
-import { FaAccessibleIcon } from "react-icons/fa";
+import { BiHappyBeaming, BiRun } from "react-icons/bi";
 import styled from "styled-components";
+import {GiRunningShoe} from "react-icons/gi";
 
 const Container = styled.section`
 	background-color: white;
@@ -55,11 +56,11 @@ const Card = styled.div`
 	line-height: 170%;
 `;
 const NumDivDiv = styled.div`
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	color: white;
 `;
 const NumDiv = styled.div`
@@ -91,8 +92,16 @@ function CardThing(Props: { Image: Function; title: string; text: string }) {
 		</NumDiv>
 	);
 }
-function Func() {
-	return <FaAccessibleIcon size="40px" />;
+function img1() {
+	return <BiHappyBeaming size="40px" />;
+}
+
+function img2() {
+	return <BiRun size="40px" />;
+}
+
+function img3() {
+	return <GiRunningShoe size="40px" />;
 }
 // eslint-disable-next-line import/no-default-export
 export default function Section(): JSX.Element {
@@ -130,23 +139,18 @@ export default function Section(): JSX.Element {
 					<NumDivDiv>
 						<CardThing
 							title="500+"
-							text="Satisfied Customersthey"
-							Image={Func}
+							text="Satisfied indviduals"
+							Image={img1}
 						/>
 						<CardThing
 							title="17K+"
 							text="Square feet of gym space"
-							Image={Func}
+							Image={img2}
 						/>
 						<CardThing
 							title="3+"
 							text="Slip Resistent Courts"
-							Image={Func}
-						/>
-						<CardThing
-							title="100K+"
-							text="Industry Leader"
-							Image={Func}
+							Image={img3}
 						/>
 					</NumDivDiv>
 				</Flex>

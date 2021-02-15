@@ -2,8 +2,10 @@ import { Span } from "@styles/index.theme";
 import { COMPANY_INFO } from "config";
 import Image from "next/image";
 import Link from "next/link";
-import { FaAccessibleIcon, FaCheckCircle, FaWrench } from "react-icons/fa";
+import { FaAccessibleIcon, FaTrophy, FaWrench } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
+import { RiSurgicalMaskFill } from "react-icons/ri"
+import { GiPartyPopper,GiPartyFlags } from "react-icons/gi"
 import styled from "styled-components";
 
 import { Button } from "./IntroCards";
@@ -41,12 +43,12 @@ const StyledTextDiv = styled.div`
 const StyledCard = styled.div`
 	width: 90%;
 	max-width: 450px;
-	width: 90%;
 	box-sizing: border-box;
 	padding-left: 70px;
 	margin: 40px 20px;
 	display: flex;
 	flex-direction: column;
+	justify-content:space-between;
 	position: relative;
 	.card-img {
 		position: absolute;
@@ -60,6 +62,7 @@ const StyledCard = styled.div`
 	}
 	p {
 		font-size: 20px;
+		height:120px;
 	}
 	button svg {
 		margin-left: 10px;
@@ -85,7 +88,7 @@ function Img() {
 }
 function Img2() {
 	return (
-		<FaAccessibleIcon
+		<FaTrophy
 			color="var(--secondary)"
 			size="40px"
 			className="card-img"
@@ -94,7 +97,7 @@ function Img2() {
 }
 function Img3() {
 	return (
-		<FaCheckCircle
+		<RiSurgicalMaskFill
 			color="var(--secondary)"
 			size="40px"
 			className="card-img"
