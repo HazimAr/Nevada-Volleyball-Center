@@ -32,6 +32,24 @@ const Card = styled.div`
 const Title = styled.h1`
 	font-size: 50px;
 `;
+type input = {
+	image: string;
+};
+function display(inValue: input[]): JSX.Element[] {
+	return inValue.map((data) => {
+		return (
+			<Card key={data.image}>
+				<div className="inside">
+					<Link href="/contact">
+						<a>
+							<Image src={data.image} width={300} height={300} />
+						</a>
+					</Link>
+				</div>
+			</Card>
+		);
+	});
+}
 // eslint-disable-next-line import/no-default-export
 export default function Events(): JSX.Element {
 	return (
@@ -39,66 +57,15 @@ export default function Events(): JSX.Element {
 			<Content>
 				<section>
 					<Title>Clinics</Title>
-					{clinicData &&
-						clinicData.map((data) => {
-							return (
-								<Card key={data.day}>
-									<div className="inside">
-										<Link href="/contact">
-											<a>
-												<Image
-													src={data.image}
-													width={300}
-													height={300}
-												/>
-											</a>
-										</Link>
-									</div>
-								</Card>
-							);
-						})}
+					{display(clinicData)}
 				</section>
 				<section>
 					<Title>Tournaments</Title>
-					{tourneyData &&
-						tourneyData.map((data) => {
-							return (
-								<Card key={data.day}>
-									<div className="inside">
-										<Link href="/contact">
-											<a>
-												<Image
-													src={data.image}
-													width={300}
-													height={300}
-												/>
-											</a>
-										</Link>
-									</div>
-								</Card>
-							);
-						})}
+					{display(tourneyData)}
 				</section>
 				<section>
 					<Title>Open Gyms</Title>
-					{openGymData &&
-						openGymData.map((data) => {
-							return (
-								<Card key={data.day}>
-									<div className="inside">
-										<Link href="/contact">
-											<a>
-												<Image
-													src={data.image}
-													width={300}
-													height={300}
-												/>
-											</a>
-										</Link>
-									</div>
-								</Card>
-							);
-						})}
+					{display(openGymData)}
 				</section>
 			</Content>
 		</main>

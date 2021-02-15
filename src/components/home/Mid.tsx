@@ -103,7 +103,9 @@ export default function Section(): JSX.Element {
 					About <Span>Nevada Volleyball Center</Span>
 				</h1>
 				<p>
-					Established in 2020, Nevada Volleyball Center is a state of the art training facility that has been honed to perfection over the last 3 years.
+					Established in 2020, Nevada Volleyball Center is a state of
+					the art training facility that has been honed to perfection
+					over the last 3 years.
 				</p>
 			</Text>
 			<div>
@@ -121,7 +123,6 @@ export default function Section(): JSX.Element {
 								operated for 3+ years and we have been working
 								hard to ensure we provide every athlete with
 								remarkable service and prodigious volleyball
-								
 							</p>
 							<a>Learn more</a>
 						</Card>

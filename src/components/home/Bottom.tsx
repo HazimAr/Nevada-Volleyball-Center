@@ -2,11 +2,7 @@ import { Span } from "@styles/index.theme";
 import { COMPANY_INFO } from "config";
 import Image from "next/image";
 import Link from "next/link";
-import {
-	FaAccessibleIcon,
-	FaCheckCircle,
-	FaWrench,
-} from "react-icons/fa";
+import { FaAccessibleIcon, FaCheckCircle, FaWrench } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from "styled-components";
 
