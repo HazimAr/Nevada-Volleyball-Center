@@ -103,9 +103,7 @@ export default function Section(): JSX.Element {
 					About <Span>Nevada Volleyball Center</Span>
 				</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Minus est esse laudantium harum ea quas aliquid sequi id
-					eius, maiores reiciendis
+					Established in 2020, Nevada Volleyball Center is a state of the art training facility that has been honed to perfection over the last 3 years.
 				</p>
 			</Text>
 			<div>
@@ -119,11 +117,11 @@ export default function Section(): JSX.Element {
 						<Card>
 							<h2>Committed to superior quality and results</h2>
 							<p>
-								Valley Construction Supply is family owned and
-								operated for 35+ years and we have been working
-								hard to ensure we provide every customer with
-								remarkable service and up-to-date product
-								knowledge
+								Nevada Volleyball Center is family owned and
+								operated for 3+ years and we have been working
+								hard to ensure we provide every athlete with
+								remarkable service and prodigious volleyball
+								
 							</p>
 							<a>Learn more</a>
 						</Card>
@@ -135,8 +133,8 @@ export default function Section(): JSX.Element {
 							Image={Func}
 						/>
 						<CardThing
-							title="100K+"
-							text="Industry Leader"
+							title="17K+"
+							text="Square feet of gym space"
 							Image={Func}
 						/>
 						<CardThing

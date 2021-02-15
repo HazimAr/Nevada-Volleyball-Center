@@ -160,25 +160,25 @@ export default function Promise(): JSX.Element {
 				<Card
 					link="/"
 					Image={Img}
-					title="PROMOTIONS AND SPECIALS"
+					title="Court Rentals"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
 					Image={Img2}
-					title="ACCURATE TAKE-OFFS"
+					title="Events"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
 					Image={Img3}
-					title="ACCURATE TAKE-OFFS"
+					title="Covid-19"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 				<Card
 					link="/"
 					Image={Img4}
-					title="PROMOTIONS AND SPECIALS"
+					title="Contact Us"
 					text="Valley Construction Supply continually offers promotions. Check out our promotions page for our current specials"
 				/>
 			</CardContainer>

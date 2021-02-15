@@ -97,19 +97,19 @@ export default function Cards(): JSX.Element {
 				Image={Img}
 				link="/link"
 				title="Volleyball"
-				description="Here at Valley Construction Supply we believe that the construction industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their construction material needs"
+				description="Here at Nevada Volleyball Center we believe that the volleyball industry is a relationship business and that our customers deserve personalized, hands-on customer service that serves them beyond their  volleyball needs"
 			/>
 			<Card
 				Image={Img2}
 				link="/link"
 				title="Large facility"
-				description="With our modern 17,000 square foot facility, we can provide any athlete an enriching volleyball experience"
+				description="With our modern 17,000 square foot facility with 40ft ceilings, we can provide any athlete an enriching volleyball experience"
 			/>
 			<Card
 				Image={Img3}
 				link="/link"
-				title="Complete Inventory"
-				description="We have everything any athlete will ever need. Slip resitent flooring, Netting between courts to preventing intruptions and office area for any administrative realated needs"
+				title="State of the Art Courts"
+				description="We have everything any team/organization will ever need: Slip resitent flooring, Regulation volleyball nets, 40ft ceilings, Netting between courts to preventing intruptions, and an Office area for any administrative related needs"
 			/>
 		</Container>
 	);
