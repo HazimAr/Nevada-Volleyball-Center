@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
-import CardData from '../content/rentals.json'
+import CardData from "../content/rentals.json";
 
 const Content = styled.section`
 	margin: 100px auto;
@@ -33,30 +33,30 @@ const StyledButton = styled.button`
 	}
 `;
 const Card = styled.div`
-	text-align:left;
-	max-width:400px;
-	width:90%;
-	margin:20px;
-`
+	text-align: left;
+	max-width: 400px;
+	width: 90%;
+	margin: 20px;
+`;
 const TextDiv = styled.div`
 	h1 {
 		font-size: 30px;
-		margin:10px 0;
+		margin: 10px 0;
 	}
 	h2 {
-		margin:5px 0;
+		margin: 5px 0;
 	}
 	h3 {
 		font-style: italic;
-		margin:0;
+		margin: 0;
 		font-weight: 300;
 	}
-`
+`;
 const PlanMain = styled.section`
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:center;
-`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+`;
 // eslint-disable-next-line import/no-default-export
 export default function Events(): JSX.Element {
 	return (
@@ -64,10 +64,15 @@ export default function Events(): JSX.Element {
 			<Content>
 				<h1>Find the plan that's right for you</h1>
 				<PlanMain>
-					{CardData?.map(data => {
+					{CardData?.map((data) => {
 						return (
 							<Card key={data.title}>
-								<Image src={data.image} height={400} width={400} alt="" />
+								<Image
+									src={data.image}
+									height={400}
+									width={400}
+									alt=""
+								/>
 								<TextDiv>
 									<h1>{data.title}</h1>
 									<h3>{data.h3}</h3>
@@ -75,12 +80,16 @@ export default function Events(): JSX.Element {
 									<p>{data.description}</p>
 									<Link href="/contact">
 										<a>
-											<StyledButton style={{fontSize:'18px'}}>Get in Touch</StyledButton>
+											<StyledButton
+												style={{ fontSize: "18px" }}
+											>
+												Get in Touch
+											</StyledButton>
 										</a>
 									</Link>
 								</TextDiv>
 							</Card>
-						)
+						);
 					})}
 				</PlanMain>
 			</Content>

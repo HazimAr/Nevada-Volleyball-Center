@@ -19,23 +19,23 @@ html {
 	--text-light: white;
 }
 ::placeholder {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 :-ms-input-placeholder {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 ::selection {
-  background: var(--secondary);
-  color: white;
+	background: var(--secondary);
+	color: white;
 }
 
 ::-moz-selection {
-  background: var(--secondary);
-  color: white;
+	background: var(--secondary);
+	color: white;
 }
 a {
 	color: inherit;

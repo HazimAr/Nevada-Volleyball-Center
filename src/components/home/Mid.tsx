@@ -2,7 +2,7 @@ import { Span } from "@styles/index.theme";
 import Image from "next/image";
 import { BiHappyBeaming, BiRun } from "react-icons/bi";
 import styled from "styled-components";
-import {GiRunningShoe} from "react-icons/gi";
+import { GiRunningShoe } from "react-icons/gi";
 
 const Container = styled.section`
 	background-color: white;
@@ -62,10 +62,10 @@ const NumDivDiv = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-between;
 	color: white;
-	@media (max-width:700px) {
-		justify-content:center;
-		align-items:center;
-		flex-direction:column;
+	@media (max-width: 700px) {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 `;
 const NumDiv = styled.div`
@@ -73,7 +73,7 @@ const NumDiv = styled.div`
 	flex-direction: column;
 	position: relative;
 	margin: 20px 40px;
-	margin-left:50px;
+	margin-left: 50px;
 	h3,
 	h4 {
 		margin: 5px 0;

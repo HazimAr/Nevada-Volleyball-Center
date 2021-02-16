@@ -28,7 +28,7 @@ type input = {
 	image: string;
 };
 function display(inValue: input[]): JSX.Element[] {
-	return inValue.map((data) => 
+	return inValue.map((data) => (
 		<Card key={data.image}>
 			<Link href="/contact">
 				<a>
@@ -36,7 +36,7 @@ function display(inValue: input[]): JSX.Element[] {
 				</a>
 			</Link>
 		</Card>
-	);
+	));
 }
 // eslint-disable-next-line import/no-default-export
 export default function Events(): JSX.Element {

@@ -20,7 +20,7 @@ const StyledCard = styled.div`
 	padding-bottom: 100px;
 	background-color: #f6f7f9;
 	position: relative;
-	
+
 	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 87.5%);
 	&:nth-child(3) {
 		clip-path: polygon(100% 0, 100% 83%, 53% 92%, 0 85%, 0 0);
@@ -32,14 +32,13 @@ const StyledCard = styled.div`
 		font-size: 20px;
 		margin-bottom: 40px;
 	}
-	@media (max-width:1000px) {
-		clip-path: unset!important;
-		height:fit-content;
+	@media (max-width: 1000px) {
+		clip-path: unset !important;
+		height: fit-content;
 	}
-	@media (max-width:700px) {
-		height:fit-content;
+	@media (max-width: 700px) {
+		height: fit-content;
 	}
-
 `;
 export const Button = styled.button`
 	text-transform: uppercase;
@@ -61,12 +60,12 @@ const HighLight = styled.div`
 `;
 
 const StyledInfo = styled.div`
-	height:50%;
-	display:flex;
+	height: 50%;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	position: relative;
-`
+`;
 function Card(props: {
 	// eslint-disable-next-line react/no-unused-prop-types
 	Image: Function;
@@ -80,14 +79,14 @@ function Card(props: {
 			<props.Image />
 			<h2>{props.title}</h2>
 			<StyledInfo>
-			<p>{props.description}</p>
-			
-			<Link href={props.link}>
-				<a>
-					<Button>Read more</Button>
-				</a>
+				<p>{props.description}</p>
+
+				<Link href={props.link}>
+					<a>
+						<Button>Read more</Button>
+					</a>
 				</Link>
-				</StyledInfo>
+			</StyledInfo>
 		</StyledCard>
 	);
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaTrophy, FaWrench } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
-import { RiSurgicalMaskFill } from "react-icons/ri"
+import { RiSurgicalMaskFill } from "react-icons/ri";
 import styled from "styled-components";
 
 import { Button } from "./IntroCards";
@@ -47,7 +47,7 @@ const StyledCard = styled.div`
 	margin: 40px 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content:space-between;
+	justify-content: space-between;
 	position: relative;
 	.card-img {
 		position: absolute;
@@ -61,9 +61,9 @@ const StyledCard = styled.div`
 	}
 	p {
 		font-size: 20px;
-		height:120px;
-		@media (max-width:700px) {
-			height:fit-content;
+		height: 120px;
+		@media (max-width: 700px) {
+			height: fit-content;
 		}
 	}
 	button svg {
@@ -90,11 +90,7 @@ function Img() {
 }
 function Img2() {
 	return (
-		<FaTrophy
-			color="var(--secondary)"
-			size="40px"
-			className="card-img"
-		/>
+		<FaTrophy color="var(--secondary)" size="40px" className="card-img" />
 	);
 }
 function Img3() {
@@ -138,9 +134,10 @@ export default function Promise(): JSX.Element {
 					</h1>
 					<p>
 						Here at Nevada Volleyball Center we believe that the
-						volleyball industry is a relationship between the athletes and the court
-						our customers deserve personalized, hands-on customer
-						service that serves them beyond their volleyball needs
+						volleyball industry is a relationship between the
+						athletes and the court our customers deserve
+						personalized, hands-on customer service that serves them
+						beyond their volleyball needs
 					</p>
 				</StyledTextDiv>
 				<Image
