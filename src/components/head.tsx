@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-import { COMPANY_INFO, headerOptions } from "../config";
+import { headerOptions } from "../config";
 
 const width = "40px";
 const height = "4px";

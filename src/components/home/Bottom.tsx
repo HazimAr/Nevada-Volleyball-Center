@@ -2,10 +2,9 @@ import { Span } from "@styles/index.theme";
 import { COMPANY_INFO } from "config";
 import Image from "next/image";
 import Link from "next/link";
-import { FaAccessibleIcon, FaTrophy, FaWrench } from "react-icons/fa";
+import { FaTrophy, FaWrench } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import { RiSurgicalMaskFill } from "react-icons/ri"
-import { GiPartyPopper,GiPartyFlags } from "react-icons/gi"
 import styled from "styled-components";
 
 import { Button } from "./IntroCards";
