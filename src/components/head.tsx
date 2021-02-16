@@ -57,6 +57,7 @@ function setHeader(bool: boolean): void {
 	const time = "0.3s";
 	if (bool && ele !== null) {
 		ele.style.animation = `dropin ${time} forwards`;
+	} else if (ele !== null) {
 		ele.style.animation = `dropout ${time} forwards`;
 		if (menus !== null) {
 			// eslint-disable-next-line @typescript-eslint/prefer-for-of
@@ -130,8 +131,8 @@ const StyledMenuContainer = styled.div`
 	position: fixed;
 	right: -100vw;
 	top: 0;
-	z-index: 100;
-	background-color: var(--secondary);
+	z-index: 5000;
+	background-color: white;
 	@media (max-width: 800px) {
 		display: block;
 	}
@@ -181,7 +182,7 @@ export default function Header(): JSX.Element {
 			<>
 				{/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
 				<a href="/#" aria-label="Company Logo">
-					<h2>{COMPANY_INFO.name}</h2>
+					<h2>NVC</h2>
 				</a>
 				<StyledLinkContainer>
 					{headerOptions.map((temp, i) => (
