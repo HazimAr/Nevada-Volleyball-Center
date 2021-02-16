@@ -20,7 +20,6 @@ const StyledCard = styled.div`
 	padding-bottom: 100px;
 	background-color: #f6f7f9;
 	position: relative;
-	
 	clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 87.5%);
 	&:nth-child(3) {
 		clip-path: polygon(100% 0, 100% 83%, 53% 92%, 0 85%, 0 0);
@@ -51,14 +50,6 @@ const HighLight = styled.div`
 	left: 50%;
 	transform: translateX(-50%);
 `;
-
-const StyledInfo = styled.div`
-	height:50%;
-	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
-	position: relative;
-`
 function Card(props: {
 	// eslint-disable-next-line react/no-unused-prop-types
 	Image: Function;
@@ -71,15 +62,12 @@ function Card(props: {
 			<HighLight />
 			<props.Image />
 			<h2>{props.title}</h2>
-			<StyledInfo>
 			<p>{props.description}</p>
-			
 			<Link href={props.link}>
 				<a>
 					<Button>Read more</Button>
 				</a>
-				</Link>
-				</StyledInfo>
+			</Link>
 		</StyledCard>
 	);
 }
