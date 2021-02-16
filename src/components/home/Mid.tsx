@@ -62,12 +62,18 @@ const NumDivDiv = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-between;
 	color: white;
+	@media (max-width:700px) {
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+	}
 `;
 const NumDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	margin: 20px 40px;
+	margin-left:50px;
 	h3,
 	h4 {
 		margin: 5px 0;

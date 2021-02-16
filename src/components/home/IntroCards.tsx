@@ -31,6 +31,14 @@ const StyledCard = styled.div`
 		font-size: 20px;
 		margin-bottom: 40px;
 	}
+	@media (max-width:1000px) {
+		clip-path: unset!important;
+		height:fit-content;
+	}
+	@media (max-width:700px) {
+		height:fit-content;
+	}
+
 `;
 export const Button = styled.button`
 	text-transform: uppercase;

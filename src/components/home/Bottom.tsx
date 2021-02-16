@@ -63,6 +63,9 @@ const StyledCard = styled.div`
 	p {
 		font-size: 20px;
 		height:120px;
+		@media (max-width:700px) {
+			height:fit-content;
+		}
 	}
 	button svg {
 		margin-left: 10px;

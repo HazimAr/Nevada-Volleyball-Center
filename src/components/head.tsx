@@ -5,7 +5,7 @@ import { COMPANY_INFO, headerOptions } from "../config";
 
 const width = "40px";
 const height = "4px";
-const color = "var(--highlight)";
+const color = "black";
 const StyledMenu = styled.div`
 	width: ${width};
 	height: ${height};
@@ -66,7 +66,7 @@ function setHeader(bool: boolean): void {
 		}
 	}
 }
-// eslint-disable-next-line import/no-default-export
+
 function IconMenu(): JSX.Element {
 	const [isAnimated, setIsAnimated] = useState(false);
 	return (
@@ -175,7 +175,6 @@ export default function Header(): JSX.Element {
 		window.addEventListener("scroll", () => {
 			checkHeader();
 		});
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	function HeaderContent(): JSX.Element {
 		return (

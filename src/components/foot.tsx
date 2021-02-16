@@ -18,7 +18,7 @@ const FooterInside = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-between;
 	@media (max-width: 700px) {
-		justify-content: center;
+		justify-content: flex-start;
 	}
 `;
 const StyledCopyright = styled.p`

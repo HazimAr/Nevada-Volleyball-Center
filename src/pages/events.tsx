@@ -20,14 +20,6 @@ const Card = styled.div`
 	max-width: 500px;
 	width: 90%;
 	margin: 20px;
-	.inside {
-		position: relative;
-		h4 {
-			position: absolute;
-			bottom: 0;
-			right: 10px;
-		}
-	}
 `;
 const Title = styled.h1`
 	font-size: 50px;
@@ -36,37 +28,33 @@ type input = {
 	image: string;
 };
 function display(inValue: input[]): JSX.Element[] {
-	return inValue.map((data) => {
-		return (
-			<Card key={data.image}>
-				<div className="inside">
-					<Link href="/contact">
-						<a>
-							<Image src={data.image} width={300} height={300} />
-						</a>
-					</Link>
-				</div>
-			</Card>
-		);
-	});
+	return inValue.map((data) => 
+		<Card key={data.image}>
+			<Link href="/contact">
+				<a>
+					<Image src={data.image} width={300} height={300} />
+				</a>
+			</Link>
+		</Card>
+	);
 }
 // eslint-disable-next-line import/no-default-export
 export default function Events(): JSX.Element {
 	return (
 		<main>
 			<Content>
-				<section>
+				<div>
 					<Title>Clinics</Title>
 					{display(clinicData)}
-				</section>
-				<section>
+				</div>
+				<div>
 					<Title>Tournaments</Title>
 					{display(tourneyData)}
-				</section>
-				<section>
+				</div>
+				<div>
 					<Title>Open Gyms</Title>
 					{display(openGymData)}
-				</section>
+				</div>
 			</Content>
 		</main>
 	);
