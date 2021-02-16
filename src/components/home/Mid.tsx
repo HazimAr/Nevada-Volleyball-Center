@@ -1,8 +1,8 @@
 import { Span } from "@styles/index.theme";
 import Image from "next/image";
 import { BiHappyBeaming, BiRun } from "react-icons/bi";
-import styled from "styled-components";
 import { GiRunningShoe } from "react-icons/gi";
+import styled from "styled-components";
 
 const Container = styled.section`
 	background-color: white;

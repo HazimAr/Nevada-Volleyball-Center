@@ -40,10 +40,11 @@ const Card = styled.div`
 `;
 const TextDiv = styled.div`
 	h1 {
-		font-size: 30px;
+		font-size: 40px;
 		margin: 10px 0;
 	}
 	h2 {
+		font-size:30px;
 		margin: 5px 0;
 	}
 	h3 {

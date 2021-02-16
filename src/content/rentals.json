@@ -1,23 +1,23 @@
 [
 	{
 		"image": "/logo.png",
-		"title": "Growing Community",
+		"title": "Professional Club",
 		"h3": "Starting at",
-		"h2": "60$ per hour",
-		"description": "MUST SIGN A LEASE LASTING UNDER 6 MONTHS"
+		"h2": "$50 per hour",
+		"description": "With 12 months lease"
 	},
 	{
 		"image": "/logo.png",
 		"title": "Recretional Club",
 		"h3": "Starting at",
-		"h2": "55$ per hour",
-		"description": "MUST SIGN A LEASE LASTING BEWTWEEN 6 TO 12 MONTHS"
+		"h2": "$55 per hour",
+		"description": "With a 6-12 months lease"
 	},
 	{
 		"image": "/logo.png",
-		"title": "Professional Club",
+		"title": "Growing Community",
 		"h3": "Starting at",
-		"h2": "50$ per hour",
-		"description": "MUST SIGN A LEASE LASTING LONGER THEN 12 MONTHS"
+		"h2": "$60 per hour",
+		"description": "With a less then 6 months lease"
 	}
 ]
