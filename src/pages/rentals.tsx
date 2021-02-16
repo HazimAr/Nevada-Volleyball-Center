@@ -33,10 +33,14 @@ const StyledButton = styled.button`
 	}
 `;
 const Card = styled.div`
+	
 	text-align: left;
 	max-width: 400px;
 	width: 90%;
 	margin: 20px;
+	Image{
+		background-color:#ffffff ;
+	}
 `;
 const TextDiv = styled.div`
 	h1 {
