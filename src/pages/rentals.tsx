@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
-import CardData from '../content/rentails.json'
+import CardData from '../content/rentals.json'
 
 const Content = styled.section`
 	margin: 100px auto;
