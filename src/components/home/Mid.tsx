@@ -43,23 +43,43 @@ const Flex = styled.div`
 		height: fit-content;
 		justify-content: space-evenly;
 	}
+	div{
+		Image{
+			top:1000px;
+		}
+	}
 `;
 
 const Card = styled.div`
 	width: 300px;
-	height: 100%;
+	height:100%;
 	background-color: white;
 	box-shadow: 0 0 10px #5e5e5e;
 	border-radius: 2px;
 	padding: 30px;
 	color: #505050;
 	line-height: 170%;
+	@media (max-width:900px) {
+		width: 250px;
+		height: 220px;
+		font-size:14px;
+	}
+	@media (max-width:850px) {
+		width: 200px;
+		height: 200px;
+		font-size:12px;
+	}
+	@media (max-width:800px) {
+		width: 300px;
+		height:100%;
+		font-size:16px;
+		margin-top:20px;
+	}
 `;
 const NumDivDiv = styled.div`
 	max-width: 1000px;
 	margin: auto;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	color: white;
 	@media (max-width: 700px) {
@@ -73,7 +93,8 @@ const NumDiv = styled.div`
 	flex-direction: column;
 	position: relative;
 	margin: 20px 40px;
-	margin-left: 50px;
+	margin-left: 100px;
+
 	h3,
 	h4 {
 		margin: 5px 0;
