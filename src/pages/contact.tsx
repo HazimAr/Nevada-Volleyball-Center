@@ -16,6 +16,9 @@ const StyledOutside = styled.div`
 `;
 const Input = styled.input`
 	box-sizing: border-box;
+	::placeholder{
+		color:black;
+	}
 `;
 const Textarea = styled.textarea`
 	resize: vertical;
@@ -39,6 +42,9 @@ const StyledForm = styled.form`
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 18px;
 		margin: 20px 0;
+		::placeholder{
+			color:black;
+		}
 	}
 `;
 const StyledTitle = styled.h2`
@@ -157,20 +163,6 @@ export default function Contact(): JSX.Element {
 							<h3>{COMPANY_INFO.phone}</h3>
 						</a>
 					</div>
-					{/* <div>
-						<BsHouseFill color="var(--secondary)" size="70px" />
-						<a
-							href="https://www.google.com/maps/place/3778+W+Cheyenne+Ave+STE+120,+North+Las+Vegas,+NV+89032/"
-							target="_blank"
-							rel="noreferrer"
-						>
-							<h3>
-								{COMPANY_INFO.address1}
-								<br />
-								{COMPANY_INFO.address2}
-							</h3>
-						</a>
-					</div> */}
 				</ContactInfoDiv>
 				<Image
 					alt=""

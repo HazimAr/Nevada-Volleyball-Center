@@ -6,7 +6,7 @@ const StyledImage = styled(Image)`
 	text-align:left;
 `
 // eslint-disable-next-line import/no-default-export
-export default function sponser(): JSX.Element {
+export default function Sponsors(): JSX.Element {
 	return (
 		<main>
             i have no idea what im doing (:

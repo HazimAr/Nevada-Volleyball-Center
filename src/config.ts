@@ -24,9 +24,10 @@ export const headerOptions = [
 	["Home", "/#"],
 	["Court Rentals", "/rentals"],
 	["Events", "/events"],
+	["Sponsors", "/sponsors"],
 	["Covid-19", "/covid"],
-	["Contact Us", "/contact"],
-	["Sponsors", "/sponsors"]
+	["Contact Us", "/contact"]
+	
 ];
 
 export {

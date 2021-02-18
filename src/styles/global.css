@@ -11,10 +11,11 @@ html {
 		Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 :root {
-	--secondary: #b52f2c;
+	--secondary:#b52f2c;
+	--hover: #992725;
 	--primary: #2c2c2c;
 	--accent: #c7c6b5;
-	--contact: #e8e8e8;
+	--contact: #cccccc;
 	--text: rgb(32, 32, 32);
 	--text-light: white;
 }

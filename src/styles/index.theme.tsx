@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-	background-color: var(--highlight);
+	background-color: var(--secondary);
 	color: white;
 	font-size: 18px;
 	width: fit-content;

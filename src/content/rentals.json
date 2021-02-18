@@ -1,21 +1,24 @@
 [
 	{
-		"image": "/price2_2.0.png",
-		"title": "Professional Club",
+		"image": "/price3.png",
+		"title": "Professional",
+		"title2": "Club",
 		"h3": "Starting at",
 		"h2": "$50 per hour",
 		"description": "With 12 months lease"
 	},
 	{
 		"image": "/price2_2.0.png",
-		"title": "Recretional Club",
+		"title": "Recretional",
+		"title2": "Club",
 		"h3": "Starting at",
 		"h2": "$55 per hour",
 		"description": "With a 6-12 months lease"
 	},
 	{
 		"image": "/price1_2.0.png",
-		"title": "Growing Community",
+		"title": "Growing",
+		"title2": "Club",
 		"h3": "Starting at",
 		"h2": "$60 per hour",
 		"description": "With a less then 6 months lease"
