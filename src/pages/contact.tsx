@@ -167,9 +167,9 @@ export default function Contact(): JSX.Element {
 				<Image
 					alt=""
 					layout="intrinsic"
-					src="/logo.png"
+					src="/contact.png"
 					width={600}
-					height={500}
+					height={600}
 				/>
 			</StyledDivs>
 		</StyledOutside>
