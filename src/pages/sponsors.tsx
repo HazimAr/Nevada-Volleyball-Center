@@ -7,7 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import path from "path";
 import styled from "styled-components";
-
+import '../styles/sponsors.module.css'
+import Carousel from '@components/sponsors/carousel'
 const images = ["logo.png", "logo.png", "logo.png"];
 
 const StyledContent = styled.article`
@@ -52,6 +53,7 @@ export default function Sponsors({ source }: never): JSX.Element {
 					);
 				})}
 			</ImageContainer>
+			<Carousel />
 			<Link href='/contact'>
 				<a>
 					<StyledButton style={{marginBottom:'100px'}}>Become a Sponsor</StyledButton>
