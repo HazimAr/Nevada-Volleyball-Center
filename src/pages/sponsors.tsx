@@ -1,3 +1,4 @@
+import Carousel from "@components/sponsors/carousel";
 import { Span, StyledButton } from "@styles/index.theme";
 import fs from "fs";
 import { GetStaticProps } from "next";
@@ -8,7 +9,7 @@ import Link from "next/link";
 import path from "path";
 import styled from "styled-components";
 import '../styles/sponsors.module.css'
-import Carousel from '@components/sponsors/carousel'
+
 const images = ["logo.png", "logo.png", "logo.png"];
 
 const StyledContent = styled.article`
@@ -26,8 +27,6 @@ const ImageContainer = styled.section`
 	justify-content:center;
 	max-width:1200px;
 	margin:50px auto;
-
-
 `
 
 // eslint-disable-next-line import/no-default-export
@@ -36,7 +35,7 @@ export default function Sponsors({ source }: never): JSX.Element {
 	return (
 		<main>
 			<StyledContent>
-				<h1><Span>We ___ our sponsors</Span></h1>
+				<h1><Span>We ____ our sponsors</Span></h1>
 				{content}
 			</StyledContent>
 			<h1 style={{ color: "var(--secondary)" }}>We thank our sponsors</h1>

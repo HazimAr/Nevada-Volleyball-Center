@@ -16,7 +16,7 @@ export default function CarouselExport(): JSX.Element
         setTimeout(() => { setCurrentSlide(currentSlide + 1); activate()}, 4000)
     }
     useEffect(() => {
-        activate()
+        // activate()
     }, [activate]);
 	return (
 		<CarouselProvider
@@ -31,6 +31,10 @@ export default function CarouselExport(): JSX.Element
 				<Slide index={1}>I am the second Slide.</Slide>
 				<Slide index={2}>I am the third Slide.</Slide>
 			</Slider>
+			<div>
+				<p>Bitch</p>
+			</div>
+
 			<ButtonBack>Back</ButtonBack>
 			<ButtonNext>Next</ButtonNext>
 		</CarouselProvider>
