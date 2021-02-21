@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { COMPANY_INFO, EMAIL_LIST } from "../../config";
 
 const DOMAIN = "mail.nevadavolleyballcenter.com";
-const API_KEY = "4212211d51d83d02b2f66a78888f0639-d32d817f-ba21f6d6";
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 const mg = mailgun({ apiKey: API_KEY, domain: DOMAIN });
 
 type Data = {
