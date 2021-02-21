@@ -67,7 +67,7 @@ const ContactInfoDiv = styled.div`
 		width: 300px;
 	}
 `;
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY || "it didnt work";
+const API_KEY = process.env.API_KEY || "this didnt work";
 // eslint-disable-next-line import/no-default-export
 export default function Contact(): JSX.Element {
 	const [name, setName] = useState("");
