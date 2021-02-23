@@ -158,13 +158,13 @@ export default function Promise(): JSX.Element {
 					link="/"
 					Image={Img2}
 					title="Events"
-					text="Every week we host Events ranging from Open Gyms, Clinics, and tournements"
+					text="Every week we host Events ranging from Open Gyms, Clinics, and tournaments"
 				/>
 				<Card
 					link="/"
 					Image={Img3}
 					title="Covid-19"
-					text="Health and saftey is our number 1 priotity, good spell, so we take precautions and follow regulations to ensure all our staff, athletes and spectators are safe."
+					text="Health and safety is our number 1 priority, good spell, so we take precautions and follow regulations to ensure all our staff, athletes and spectators are safe."
 				/>
 			</CardContainer>
 		</Section>

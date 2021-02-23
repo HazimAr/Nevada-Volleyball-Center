@@ -166,7 +166,7 @@ export default function Section(): JSX.Element {
 					<NumDivDiv>
 						<CardThing
 							title="500+"
-							text="Satisfied indviduals"
+							text="Satisfied individuals"
 							Image={img1}
 						/>
 						<CardThing
