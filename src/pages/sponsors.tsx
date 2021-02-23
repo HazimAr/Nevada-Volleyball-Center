@@ -1,4 +1,3 @@
-import Carousel from "@components/sponsors/carousel";
 import { Span, StyledButton } from "@styles/index.theme";
 import fs from "fs";
 import { GetStaticProps } from "next";
@@ -52,7 +51,6 @@ export default function Sponsors({ source }: never): JSX.Element {
 					);
 				})}
 			</ImageContainer>
-			<Carousel />
 			<Link href='/contact'>
 				<a>
 					<StyledButton style={{marginBottom:'100px'}}>Become a Sponsor</StyledButton>
