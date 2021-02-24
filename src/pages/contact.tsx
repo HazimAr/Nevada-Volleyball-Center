@@ -16,8 +16,8 @@ const StyledOutside = styled.div`
 `;
 const Input = styled.input`
 	box-sizing: border-box;
-	::placeholder{
-		color:black;
+	::placeholder {
+		color: black;
 	}
 `;
 const Textarea = styled.textarea`
@@ -42,8 +42,8 @@ const StyledForm = styled.form`
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 18px;
 		margin: 20px 0;
-		::placeholder{
-			color:black;
+		::placeholder {
+			color: black;
 		}
 	}
 `;

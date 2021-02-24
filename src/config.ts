@@ -26,8 +26,7 @@ export const headerOptions = [
 	["Events", "/events"],
 	["Sponsors", "/sponsors"],
 	["Covid-19", "/covid"],
-	["Contact Us", "/contact"]
-	
+	["Contact Us", "/contact"],
 ];
 
 export {
