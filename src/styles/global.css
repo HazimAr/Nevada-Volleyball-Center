@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Noto";
+	src: url("/fonts/NotoSans-Regular.tff");
+}
+
 body,
 html {
 	margin: 0;
@@ -7,11 +12,17 @@ html {
 	scroll-behavior: smooth;
 	text-align: center;
 	overflow-x: hidden;
-	font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
-		Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: "Noto", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Noto";
+	src: url("/fonts/NotoSans-Regular.tff");
 }
 :root {
-	--secondary:#b52f2c;
+	--secondary: #b52f2c;
 	--hover: #992725;
 	--primary: #2c2c2c;
 	--accent: #c7c6b5;

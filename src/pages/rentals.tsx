@@ -12,35 +12,13 @@ const Content = styled.section`
 		font-size: 50px;
 	}
 `;
-// const StyledButton = styled.button`
-// 	font-size: 25px;
-// 	background-color: var(--secondary);
-// 	color: white;
-// 	padding: 10px 40px;
-// 	border-radius: 60px;
-// 	display: flex;
-// 	align-items: center;
-// 	transition: background-color 0.3s ease;
-// 	svg {
-// 		padding-left: 10px;
-// 		transition: transform 0.3s ease;
-// 	}
-// 	:hover {
-// 		background-color: #af302e;
-// 		cursor: pointer;
-// 		svg {
-// 			transform: translateX(10px);
-// 		}
-// 	}
-// `;
 const Card = styled.div`
-	
 	text-align: left;
 	max-width: 500px;
 	width: 90%;
 	margin: 20px;
-	Image{
-		background-color:#ffffff ;
+	Image {
+		background-color: #ffffff;
 	}
 `;
 const TextDiv = styled.div`
@@ -49,7 +27,7 @@ const TextDiv = styled.div`
 		margin: 10px 0;
 	}
 	h2 {
-		font-size:30px;
+		font-size: 30px;
 		margin: 5px 0;
 	}
 	h3 {
@@ -68,7 +46,9 @@ export default function Events(): JSX.Element {
 	return (
 		<main>
 			<Content>
-				<h1>Find the plan that's <Span>right</Span> for you</h1>
+				<h1>
+					Find the plan that's <Span>right</Span> for you
+				</h1>
 				<PlanMain>
 					{CardData?.map((data) => {
 						return (
@@ -80,7 +60,9 @@ export default function Events(): JSX.Element {
 									alt=""
 								/>
 								<TextDiv>
-									<h1><Span>{data.title}</Span> {data.title2}</h1>
+									<h1>
+										<Span>{data.title}</Span> {data.title2}
+									</h1>
 									<h3>{data.h3}</h3>
 									<h2>{data.h2}</h2>
 									<p>{data.description}</p>

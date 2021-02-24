@@ -104,7 +104,7 @@ const StyledLinkContainer = styled.ul`
 	display: flex;
 	justify-content: center;
 	width: 60%;
-	max-width:1000px;
+	max-width: 1000px;
 	margin: auto;
 	font-size: 25px;
 	@media (max-width: 800px) {

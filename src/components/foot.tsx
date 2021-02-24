@@ -141,7 +141,9 @@ export default function footer(): JSX.Element {
 					</StyledContact>
 					<StyledList>
 						<li>
-							<h2>Quick <Span>Links</Span></h2>
+							<h2>
+								Quick <Span>Links</Span>
+							</h2>
 						</li>
 						{headerOptions.map((data) => (
 							<a href={data[1]} key={data[0]}>

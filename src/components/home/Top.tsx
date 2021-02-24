@@ -66,8 +66,7 @@ export default function Intro(): JSX.Element {
 						<p>
 							Nevada Volleyball Center is a state of the art
 							facility, with training equipment fit for any
-							athletes needs. Blah blah blah blah blah blah blah
-							blah blah blah blah blah blah
+							athletes needs.
 						</p>
 					</StyledText>
 				</Inside>
