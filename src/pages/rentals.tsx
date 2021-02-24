@@ -12,27 +12,7 @@ const Content = styled.section`
 		font-size: 50px;
 	}
 `;
-// const StyledButton = styled.button`
-// 	font-size: 25px;
-// 	background-color: var(--secondary);
-// 	color: white;
-// 	padding: 10px 40px;
-// 	border-radius: 60px;
-// 	display: flex;
-// 	align-items: center;
-// 	transition: background-color 0.3s ease;
-// 	svg {
-// 		padding-left: 10px;
-// 		transition: transform 0.3s ease;
-// 	}
-// 	:hover {
-// 		background-color: #af302e;
-// 		cursor: pointer;
-// 		svg {
-// 			transform: translateX(10px);
-// 		}
-// 	}
-// `;
+
 const Card = styled.div`
 	
 	text-align: left;
