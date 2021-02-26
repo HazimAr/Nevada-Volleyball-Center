@@ -180,7 +180,7 @@ export default function Section(): JSX.Element {
 						/>
 						<CardThing
 							title="3+"
-							text="Slip Resistent Courts"
+							text="Slip Resistant Courts"
 							Image={img3}
 						/>
 					</NumDivDiv>

@@ -12,7 +12,7 @@ const Content = styled.section`
 	justify-content: center;
 	align-items: center;
 	section {
-		margin: 20px 100px;
+		margin: 0px 10px;
 	}
 `;
 
@@ -43,18 +43,18 @@ export default function Events(): JSX.Element {
 	return (
 		<main>
 			<Content>
-				<div>
+				<section>
 					<Title>Clinics</Title>
 					{display(clinicData)}
-				</div>
-				<div>
+				</section>
+				<section>
 					<Title>Tournaments</Title>
 					{display(tourneyData)}
-				</div>
-				<div>
+				</section>
+				<section>
 					<Title>Open Gyms</Title>
 					{display(openGymData)}
-				</div>
+				</section>
 			</Content>
 		</main>
 	);

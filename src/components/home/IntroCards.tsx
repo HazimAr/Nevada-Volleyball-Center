@@ -128,7 +128,7 @@ export default function Cards(): JSX.Element {
 				Image={Img3}
 				link="/rentals"
 				title="State of the Art Courts"
-				description="We have everything any team/organization will ever need: Slip resistent flooring, Regulation volleyball nets, 40ft ceilings, Netting between courts to preventing interruptions, and an Office area for any administrative related needs"
+				description="We have everything any team/organization will ever need: Slip resistant flooring, Regulation volleyball nets, 40ft ceilings, Netting between courts to preventing interruptions, and an Office area for any administrative related needs"
 			/>
 		</Container>
 	);

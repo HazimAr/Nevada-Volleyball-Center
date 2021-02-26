@@ -136,7 +136,7 @@ export default function Promise(): JSX.Element {
 						Here at Nevada Volleyball Center we believe that the
 						volleyball industry is a relationship between the
 						athletes and the court our customers deserve
-						personalized, hands-on customer service that serves them
+						personalized, hands on customer service that serves them
 						beyond their volleyball needs
 					</p>
 				</StyledTextDiv>
