@@ -55,6 +55,7 @@ export default function Sponsors(): JSX.Element {
 					opportunities, please send your inquiry to
 					nevadavolleyballcenter@gmail.com.
 					<br />
+					<br />
 					The company we keep matters. This is why we have some of the
 					best and brightest athletes and partners in all of sports.
 					No partnership is too small for the goodness that comes from
@@ -78,7 +79,7 @@ export default function Sponsors(): JSX.Element {
 				</div>
 				<div>
 					<FaThLarge size="40px" color="var(--secondary)" />
-					<h2>6,782sqft</h2>
+					<h2>6,782q</h2>
 				</div>
 				<div>
 					<FaArrowUp size="40px" color="var(--secondary)" />
