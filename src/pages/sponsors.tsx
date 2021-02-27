@@ -1,7 +1,7 @@
 import { Span, StyledButton } from "@styles/index.theme";
 import Image from "next/image";
 import Link from "next/link";
-import { FaAtlassian } from "react-icons/fa";
+import {  FaRestroom, FaBuilding, FaShoePrints, FaArrowUp, FaThLarge, FaVolleyballBall } from "react-icons/fa";
 import styled from "styled-components";
 import "../styles/sponsors.module.css";
 
@@ -73,29 +73,29 @@ export default function Sponsors(): JSX.Element {
 			</StyledContent>
 			<StyledDiv>
 				<div>
-					<FaAtlassian size="40px" color="var(--secondary)" />
+					<FaVolleyballBall size="40px" color="var(--secondary)" />
 					<h2>3 courts</h2>
 				</div>
 				<div>
-					<FaAtlassian size="40px" color="var(--secondary)" />
+					<FaThLarge size="40px" color="var(--secondary)" />
 					<h2>6,782sqft</h2>
 				</div>
 				<div>
-					<FaAtlassian size="40px" color="var(--secondary)" />
+					<FaArrowUp size="40px" color="var(--secondary)" />
 					<h2>222 feet high ceilings</h2>
 				</div>
 			</StyledDiv>
 			<StyledDiv>
 				<div>
-					<FaAtlassian size="40px" color="var(--secondary)" />
+					<FaShoePrints size="40px" color="var(--secondary)" />
 					<h2>100+ foot count</h2>
 				</div>
 				<div>
-					<FaAtlassian size="40px" color="var(--secondary)" />
+					<FaRestroom size="40px" color="var(--secondary)" />
 					<h2>2 bathrooms</h2>
 				</div>
 				<div>
-					<FaAtlassian size="40px" color="var(--secondary)" />
+					<FaBuilding size="40px" color="var(--secondary)" />
 					<h2>Modern Administrative office area</h2>
 				</div>
 			</StyledDiv>
