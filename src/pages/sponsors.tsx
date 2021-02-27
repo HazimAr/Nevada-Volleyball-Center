@@ -63,9 +63,13 @@ export default function Sponsors(): JSX.Element {
 					with any details that will help us understand your
 					interests. Thank you!
 				</p>
-				<StyledButton style={{ fontSize: "18px" }}>
-					Get in Touch
-				</StyledButton>
+				<Link href="/contact">
+					<a>
+						<StyledButton style={{ fontSize: "18px" }}>
+							Become a Sponsor
+						</StyledButton>
+					</a>
+			</Link>
 			</StyledContent>
 			<StyledDiv>
 				<div>
@@ -74,25 +78,25 @@ export default function Sponsors(): JSX.Element {
 				</div>
 				<div>
 					<FaAtlassian size="40px" color="var(--secondary)" />
-					<h2>6,782 in building</h2>
+					<h2>6,782sqft</h2>
 				</div>
 				<div>
 					<FaAtlassian size="40px" color="var(--secondary)" />
-					<h2>Some Text About Something</h2>
+					<h2>222 feet high ceilings</h2>
 				</div>
 			</StyledDiv>
 			<StyledDiv>
 				<div>
 					<FaAtlassian size="40px" color="var(--secondary)" />
-					<h2>Some Text About Something</h2>
+					<h2>100+ foot count</h2>
 				</div>
 				<div>
 					<FaAtlassian size="40px" color="var(--secondary)" />
-					<h2>6,782 in building</h2>
+					<h2>2 bathrooms</h2>
 				</div>
 				<div>
 					<FaAtlassian size="40px" color="var(--secondary)" />
-					<h2>3 courts</h2>
+					<h2>Modern Administrative office area</h2>
 				</div>
 			</StyledDiv>
 			<h1>We thank our sponsors</h1>
