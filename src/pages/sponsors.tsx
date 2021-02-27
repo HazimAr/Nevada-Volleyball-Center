@@ -51,6 +51,10 @@ export default function Sponsors(): JSX.Element {
 					<Span>We love our sponsors</Span>
 				</h1>
 				<p>
+					To learn about Nevada Volleyball Center partnerships
+					opportunities, please send your inquiry to
+					nevadavolleyballcenter@gmail.com.
+					<br />
 					The company we keep matters. This is why we have some of the
 					best and brightest athletes and partners in all of sports.
 					No partnership is too small for the goodness that comes from
@@ -59,9 +63,7 @@ export default function Sponsors(): JSX.Element {
 					with any details that will help us understand your
 					interests. Thank you!
 				</p>
-				<StyledButton
-					style={{ fontSize: "18px" }}
-				>
+				<StyledButton style={{ fontSize: "18px" }}>
 					Get in Touch
 				</StyledButton>
 			</StyledContent>
