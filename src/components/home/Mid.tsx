@@ -60,7 +60,7 @@ const Card = styled.div`
 	color: #505050;
 	line-height: 170%;
 	h2 {
-		color:black;
+		color: black;
 		font-weight: 400;
 	}
 	@media (max-width: 900px) {
@@ -163,8 +163,8 @@ export default function Section(): JSX.Element {
 								operated for 3+ years and we have been working
 								hard to ensure we provide every athlete with
 								remarkable service and prodigious volleyball
+								experience
 							</p>
-							<a>Learn more</a>
 						</Card>
 					</div>
 					<NumDivDiv>

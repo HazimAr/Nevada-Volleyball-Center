@@ -51,12 +51,19 @@ export default function Sponsors(): JSX.Element {
 					<Span>We love our sponsors</Span>
 				</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Nulla, quaerat? Quia recusandae, alias, voluptas possimus
-					iusto earum tempora animi ipsam reprehenderit impedit illum
-					eligendi deserunt? Exercitationem necessitatibus explicabo
-					saepe beatae.
+					The company we keep matters. This is why we have some of the
+					best and brightest athletes and partners in all of sports.
+					No partnership is too small for the goodness that comes from
+					co-creation so we look forward to speaking more about
+					developing something together. Please drop us a note below
+					with any details that will help us understand your
+					interests. Thank you!
 				</p>
+				<StyledButton
+					style={{ fontSize: "18px" }}
+				>
+					Get in Touch
+				</StyledButton>
 			</StyledContent>
 			<StyledDiv>
 				<div>

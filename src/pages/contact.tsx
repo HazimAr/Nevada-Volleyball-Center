@@ -55,15 +55,13 @@ const StyledTitle = styled.h2`
 const StyledDivs = styled.div`
 	display: flex;
 	flex-direction: column;
-
-
 `;
 const ContactInfoDiv = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
-	margin-top:30px;
+	margin-top: 30px;
 	div {
 		width: 300px;
 	}

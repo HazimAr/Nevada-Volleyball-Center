@@ -16,7 +16,6 @@ type Data = {
 	message: string;
 };
 
-
 // eslint-disable-next-line import/no-default-export
 export default function Email(
 	req: NextApiRequest,
