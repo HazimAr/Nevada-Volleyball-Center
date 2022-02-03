@@ -191,9 +191,9 @@ export default function footer(): JSX.Element {
 			<StyledCopyright>
 				<div>
 					Copyright © 2021{" "}
-					<a href="https://webdefyer.com">
+					<a href="https://hazim.tech">
 						Designed with <FaHeart color="red" /> by
-						<Span> Webdefyer</Span>
+						<Span> Hazim</Span>
 					</a>{" "}
 				</div>
 			</StyledCopyright>
